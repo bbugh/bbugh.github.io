@@ -606,7 +606,30 @@
               <h3 class="mb-6 text-2xl font-bold text-gray-900">
                 Send a Message
               </h3>
-              <form class="space-y-4">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="space-y-4"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="172169b3-9425-4cf5-bc8d-d66eb1ff43f2"
+                />
+
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Submission from brianbugh.me contact form"
+                />
+
                 <div>
                   <label
                     for="name"
