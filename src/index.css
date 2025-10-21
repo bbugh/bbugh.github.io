@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+  --font-inter: "Inter", var(--font-sans);
+  --font-playfair: "Playfair Display", var(--font-serif);
+}
+
+@layer theme {
+  body {
+    font-family: var(--font-inter);
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-playfair);
+  }
+}
+
 .highlight {
   @apply rounded-sm bg-amber-100 font-semibold text-orange-600;
 }
