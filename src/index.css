@@ -3,6 +3,7 @@
 @theme {
   --font-inter: "Inter", var(--font-sans);
   --font-playfair: "Playfair Display", var(--font-serif);
+  --font-blockquote: "Cormorant Garamond", var(--font-serif);
 }
 
 @layer theme {
