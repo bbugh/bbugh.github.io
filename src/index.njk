@@ -1,3 +1,4 @@
+{% import "testimonial.njk" as testimonial %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -317,33 +318,13 @@
       </section>
 
       <!-- Testimonial 1 -->
-      <section
-        class="font-blockquote divider-from-orange-50 bg-gray-900 pt-32 pb-20 md:pt-40 md:pb-32"
-      >
-        <div class="mx-auto max-w-5xl px-6">
-          <div class="flex flex-col items-start md:flex-row md:gap-12">
-            <img
-              src="/images/sean-patrick-face.webp"
-              alt="Sean Patrick Maher"
-              class="mb-8 h-48 w-48 self-center rounded-full border-4 border-orange-600 object-cover md:mb-0 md:flex-shrink-0 md:self-auto"
-            />
-            <figure class="text-2xl/8 md:text-3xl/10">
-              <blockquote class="mb-8 font-light text-gray-200">
-                &ldquo;Brian has a rare ability to expand out to the big vision
-                and also focus on the smallest details. He asks the questions
-                that help clarify what I'm really trying to
-                accomplish&ndash;sometimes showing that the solution I brought
-                isn't actually the problem I'm trying to solve.&rdquo;
-              </blockquote>
-              <figcaption
-                class="text-center text-lg font-semibold text-orange-600 md:text-right"
-              >
-                —Sean Patrick Maher, SomAlive
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      {{ testimonial.render(
+        "Sean Patrick Maher",
+        "SomAlive",
+        "/images/sean-patrick-face.webp",
+        "Brian has a rare ability to expand out to the big vision and also focus on the smallest details. He asks the questions that help clarify what I'm really trying to accomplish–sometimes showing that the solution I brought isn't actually the problem I'm trying to solve.",
+        "orange-50"
+      ) }}
 
       <!-- Career Highlights -->
       <section class="divider-from-gray-900 px-6 py-20 md:py-32">
@@ -480,35 +461,13 @@
       </section>
 
       <!-- Testimonial 2 -->
-      <section
-        class="font-blockquote divider-from-orange-50 bg-gray-900 pt-32 pb-20 md:pt-40 md:pb-32"
-      >
-        <div class="mx-auto max-w-5xl px-6">
-          <div class="flex flex-col items-start md:flex-row md:gap-12">
-            <img
-              src="/images/mark-boughton-face.webp"
-              alt="Mark Boughton"
-              class="mb-8 h-48 w-48 self-center rounded-full border-4 border-orange-600 object-cover md:mb-0 md:flex-shrink-0 md:self-auto"
-            />
-            <figure class="text-2xl/8 md:text-3xl/10">
-              <blockquote class="mb-8 font-light text-gray-200">
-                &ldquo;Brian provides strategic guidance through our sessions,
-                helping me navigate ambiguity, confusion, uncertainty, and
-                volatility in my professional life. He brings a rare blend of
-                deep consulting wisdom, psychological insight, and practical
-                business strategy that creates real clarity and momentum, which
-                transformed how I approach my career and leadership
-                challenges.&rdquo;
-              </blockquote>
-              <figcaption
-                class="text-center text-lg font-semibold text-orange-600 md:text-right"
-              >
-                —Mark Boughton, Serial Entrepreneur & CEO
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      {{ testimonial.render(
+        "Mark Boughton",
+        "Serial Entrepreneur & CEO",
+        "/images/mark-boughton-face.webp",
+        "Brian provides strategic guidance through our sessions, helping me navigate ambiguity, confusion, uncertainty, and volatility in my professional life. He brings a rare blend of deep consulting wisdom, psychological insight, and practical business strategy that creates real clarity and momentum, which transformed how I approach my career and leadership challenges.",
+        "orange-50"
+      ) }}
 
       <!-- Creating & Exploring -->
       <!-- <section class="divider-from-gray-900 bg-white py-20 md:py-32">

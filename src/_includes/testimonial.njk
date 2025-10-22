@@ -1,0 +1,25 @@
+{% macro render(name, title, image, quote, dividerFrom) %}
+<section
+  class="font-blockquote divider-from-{{ dividerFrom }} bg-gray-900 pt-32 pb-20 md:pt-40 md:pb-32"
+>
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="flex flex-col items-start md:flex-row md:gap-12">
+      <img
+        src="{{ image }}"
+        alt="{{ name }}"
+        class="mb-8 h-48 w-48 self-center rounded-full border-4 border-orange-600 object-cover md:mb-0 md:flex-shrink-0 md:self-auto"
+      />
+      <figure class="text-2xl/8 md:text-3xl/10">
+        <blockquote class="mb-8 font-light text-gray-200">
+          &ldquo;{{ quote }}&rdquo;
+        </blockquote>
+        <figcaption
+          class="text-center text-lg font-semibold text-orange-600 md:text-right"
+        >
+          —{{ name }}, {{ title }}
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+{% endmacro %}
