@@ -34,6 +34,10 @@
   @apply bg-gray-800 hover:bg-gray-900;
 }
 
+.btn-lg {
+  @apply px-12 py-4 text-lg;
+}
+
 .divider-from-orange-50 {
   overflow: hidden;
   position: relative;
