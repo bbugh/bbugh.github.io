@@ -1,15 +1,8 @@
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/postcss';
-import autoprefixer from 'autoprefixer';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: './_site',
-  vite: {
-    css: {
-      postcss: {
-        plugins: [tailwindcss, autoprefixer],
-      },
-    },
-  },
+  outDir: "./_site",
+  vite: { plugins: [tailwindcss()] },
 });
