@@ -1,4 +1,8 @@
-{% import "testimonial.njk" as testimonial %}
+---
+import Testimonial from '../components/Testimonial.astro';
+import '../styles/index.css';
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,8 +13,6 @@
       content="Brian Bugh - Technical Strategist, Educator, and Catalyst helping organizations solve complex problems"
     />
     <title>Brian Bugh - Technical Strategist | Educator | Catalyst</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -318,13 +320,13 @@
       </section>
 
       <!-- Testimonial 1 -->
-      {{ testimonial.render(
-        "Sean Patrick Maher",
-        "SomAlive",
-        "/images/sean-patrick-face.webp",
-        "Brian has a rare ability to expand out to the big vision and also focus on the smallest details. He asks the questions that help clarify what I'm really trying to accomplish–sometimes showing that the solution I brought isn't actually the problem I'm trying to solve.",
-        "orange-50"
-      ) }}
+      <Testimonial
+        name="Sean Patrick Maher"
+        title="SomAlive"
+        image="/images/sean-patrick-face.webp"
+        quote="Brian has a rare ability to expand out to the big vision and also focus on the smallest details. He asks the questions that help clarify what I'm really trying to accomplish–sometimes showing that the solution I brought isn't actually the problem I'm trying to solve."
+        dividerFrom="orange-50"
+      />
 
       <!-- Career Highlights -->
       <section class="divider-from-gray-900 px-6 py-20 md:py-32">
@@ -461,37 +463,13 @@
       </section>
 
       <!-- Testimonial 2 -->
-      {{ testimonial.render(
-        "Mark Boughton",
-        "Serial Entrepreneur & CEO",
-        "/images/mark-boughton-face.webp",
-        "Brian provides strategic guidance through our sessions, helping me navigate ambiguity, confusion, uncertainty, and volatility in my professional life. He brings a rare blend of deep consulting wisdom, psychological insight, and practical business strategy that creates real clarity and momentum, which transformed how I approach my career and leadership challenges.",
-        "orange-50"
-      ) }}
-
-      <!-- Creating & Exploring -->
-      <!-- <section class="divider-from-gray-900 bg-white py-20 md:py-32">
-      <div class="mx-auto max-w-4xl px-6">
-        <h2 class="mb-12 text-4xl font-bold text-gray-900 md:text-5xl">
-          Creating & Exploring
-        </h2>
-        <span class="highlight">section work in progress</span>
-        <div class="space-y-2 text-lg text-gray-700">
-          <div>→ Retreat centers</div>
-          <div>→ Alternative access to education</div>
-          <div>
-            → Improving accessibility of business principles to impact
-            organizations
-          </div>
-          <div>
-            → Cutting edge project strategizing, real "sci-fi is here" stuff
-          </div>
-          <div>→ Transformational interpersonal events</div>
-          <div>→ Caring for and distributing wisdom from our elders</div>
-          <div>→ Creating spaces for authentic human connection and play</div>
-        </div>
-      </div>
-    </section> -->
+      <Testimonial
+        name="Mark Boughton"
+        title="Serial Entrepreneur & CEO"
+        image="/images/mark-boughton-face.webp"
+        quote="Brian provides strategic guidance through our sessions, helping me navigate ambiguity, confusion, uncertainty, and volatility in my professional life. He brings a rare blend of deep consulting wisdom, psychological insight, and practical business strategy that creates real clarity and momentum, which transformed how I approach my career and leadership challenges."
+        dividerFrom="orange-50"
+      />
 
       <!-- Connect -->
       <section
