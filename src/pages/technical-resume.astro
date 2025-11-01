@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 
 <Layout>
   <body class="bg-gray-400 font-sans text-stone-800">
-    <main id="resume" class="mx-auto mb-12 max-w-4xl bg-white">
+    <main id="resume" class="mx-auto mb-12 max-w-4xl bg-white px-8 lg:px-0">
       <!-- Top link -->
       <div class="w-full py-1 text-center">
         <a href="/" class="text-sm text-blue-600">« Return to the home page</a>
@@ -19,32 +19,47 @@ import Footer from "../components/Footer.astro";
 
       <!-- About Me -->
       <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
-        <div class="pr-4 text-right font-bold md:w-1/4">
+        <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">About Me</h2>
         </div>
         <div class="border-l border-gray-300 pl-4 md:w-3/4">
-          I am a Systems Engineer with 20 years of professional programming
-          experience in web and games. I specialize in building the foundation
-          for platforms and teams, robust product designs, and inspiring
-          leadership. I love to solve impossible problems. Cutting edge web,
-          games, robotic space mining, biotech, microfinance, embedded devices,
-          energy hacking, or something entirely new. If they think it can't be
-          done, I'll to be the one to do it.
+          <div class="text-lg font-bold text-orange-600">
+            Generalist System Engineer
+          </div>
+          <p>
+            <strong>
+              I have been a full stack, systems, and embedded software engineer
+              for 30 years.
+            </strong>
+            When someone says "what can you do?", the honest answer is "almost anything".
+            I specialize in not specializing: I am an technology generalist who can
+            quickly adapt to new technologies and domains. If I don't know it already,
+            I will learn it quickly. I have worked in industries ranging from healthcare
+            to video games to finance to education.
+          </p>
+
+          <div class="mt-4 text-lg font-bold text-orange-600">Leadership</div>
+          <p>
+            <strong>
+              I've led multiple teams of developers, designers, sales, etc.
+            </strong>
+            in my role as technical cofounder and/or CTO of multiple startups, as
+            well as leading teams in larger organizations. My leadership style is
+            collaborative and empowering, focused on bringing out the best in each
+            team member while ensuring we meet our goals effectively and efficiently.
+          </p>
         </div>
       </div>
 
       <!-- Primary technologies -->
       <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
-        <div class="pr-4 text-right font-bold md:w-1/4">
-          <h2 class="mb-1 font-serif text-lg">Primary technologies</h2>
+        <div class="font-bold md:w-1/4">
+          <h2 class="mb-1 font-serif text-lg">Recently used technologies</h2>
         </div>
         <div class="border-l border-gray-300 pl-4 md:w-3/4">
           <ul class="mb-4 flex flex-wrap gap-2">
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Ruby
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Rails
+              TypeScript/JavaScript
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               HTML
@@ -53,24 +68,58 @@ import Footer from "../components/Footer.astro";
               CSS
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              JavaScript
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              ActionScript
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               Git/SCM
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               Photoshop
             </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              SQL
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Ruby/Rails
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              bash
+            </li>
           </ul>
         </div>
       </div>
 
+      <!-- Frameworks -->
+      <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
+        <div class="font-bold md:w-1/4">
+          <h2 class="mb-1 font-serif text-lg">Frameworks</h2>
+        </div>
+        <div class="border-l border-gray-300 pl-4 md:w-3/4">
+          <ul class="mb-4 flex flex-wrap gap-2">
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Vue 2/3
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Svelte 4
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Astro
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Tailwind CSS
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              React
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Node.js
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Ruby on Rails
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- Other technologies -->
       <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
-        <div class="pr-4 text-right font-bold md:w-1/4">
+        <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">Other technologies</h2>
           <small class="block text-xs text-gray-400"
             >I have experience with many other languages and technologies.</small
@@ -78,6 +127,20 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="border-l border-gray-300 pl-4 md:w-3/4">
           <p class="mb-1 font-bold">Systems:</p>
+
+          <ul class="mb-4 flex flex-wrap gap-2">
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Windows
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Mac
+            </li>
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              Linux
+            </li>
+          </ul>
+
+          <div class="mb-1 font-bold">Game Consoles:</div>
           <ul class="mb-4 flex flex-wrap gap-2">
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               PS2
@@ -91,25 +154,16 @@ import Footer from "../components/Footer.astro";
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               Wii
             </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Windows
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Mac
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Linux
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              Apache
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              SCM Admin
-            </li>
           </ul>
 
-          <p class="mb-1 font-bold">Previous Language Expertise:</p>
+          <p class="font-bold">Other or Past Language Expertise:</p>
+          <div class="mb-2 text-sm font-normal text-gray-600">
+            (proficient in the past but not recently used in production)
+          </div>
           <ul class="mb-4 flex flex-wrap gap-2">
+            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
+              ActionScript
+            </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               C#/.NET
             </li>
@@ -126,9 +180,6 @@ import Footer from "../components/Footer.astro";
               PHP
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              SQL
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               XSLT/XPath
             </li>
           </ul>
@@ -136,16 +187,13 @@ import Footer from "../components/Footer.astro";
           <p class="mb-1 font-bold">Hobbyist Knowledge:</p>
           <ul class="mb-4 flex flex-wrap gap-2">
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              io
+              Rust
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               Lisp
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               assembly
-            </li>
-            <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
-              bash
             </li>
             <li class="rounded border border-gray-300 bg-gray-100 px-2 py-px">
               LaTeX
@@ -174,26 +222,56 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Technical Highlights -->
-      <div class="border-b border-gray-300 py-4">
-        <div class="py-4 text-center">
-          <h1 class="mb-1 font-serif text-2xl">Technical Highlights</h1>
+      <div class="border-b border-gray-300 py-12">
+        <div class="py-4">
+          <h1 class="mb-1 font-serif text-4xl">Technical Highlights</h1>
           <p class="mb-4 font-serif text-sm text-gray-500">
             The really meaty stuff
           </p>
-          <p class="mx-auto max-w-3xl text-sm leading-6">
-            While I did a lot of cool things in the web industry, the games
-            industry is where some of the greatest creative opportunities and
-            hardest problems are solved on a regular basis. I am looking for a
-            similar leap out of the virtual world into the real world.
+          <p class="mx-auto leading-6">
+            I've solved many (very) challenging technical problems over the
+            years. This is just a few of the most interesting highlights.
           </p>
         </div>
 
-        <div class="flex flex-col gap-6 pt-4 md:flex-row">
-          <div class="md:w-1/2">
-            <h2 class="mb-2 font-serif text-lg">
+        <div class="grid gap-8 pt-4 md:grid-cols-2">
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
+              Custom Linux Audio / Electron Kiosk System
+            </h2>
+            <p class="leading-6">
+              For a client's interactive kiosk system, I created a custom
+              Linux-based OS that booted directly into a secure Electron app
+              kiosk. The system featured surround sound
+              <span class="italic"> (surprisingly difficult on Linux) </span>,
+              automatic updates, remote management, and an advanced audio engine
+              that handled multiple overlapping audio tracks with smooth
+              crossfading, pausing, and more.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
+              Rewrite of a internal banking administration system
+            </h2>
+            <p class="leading-6">
+              A large bank client had recently developed an internal
+              administration system that was built by a third party that was
+              buggy, insecure, difficult to use—and worst of all—very, very
+              slow. It took the team six months to build (based on a one month
+              estimate) and was horribly insecure (SQL injection, client-only
+              password validation, etc.). At the client's request, I completely
+              rewrote the entire system from the ground up in ASP.net, which I
+              had never used before, in two weeks, in a way that was very fast,
+              secure, and easy to use.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
               Custom Xbox 360 file packaging system
             </h2>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               Microsoft's secure file system for signing XBOX packages was very
               slow, and not very secure. In order to overcome these limitations,
               I created a file packaging system that featured intelligent file
@@ -203,11 +281,12 @@ import Footer from "../components/Footer.astro";
               hacking.
             </p>
           </div>
-          <div class="md:w-1/2">
-            <h2 class="mb-2 font-serif text-lg">
+
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
               Multiple Continuous Integration and Automated Testing Tools
             </h2>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               For multiple projects I created custom automated testing,
               building, and continuous integration tools that featured security
               auto-attacks (such as SQL and timing overflows, odd user
@@ -217,14 +296,12 @@ import Footer from "../components/Footer.astro";
               both the web and for games (which is a lot less common).
             </p>
           </div>
-        </div>
 
-        <div class="flex flex-col gap-6 pt-4 md:flex-row">
-          <div class="md:w-1/2">
-            <h2 class="mb-2 font-serif text-lg">
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
               Spec-complete, feature enhanced ActionScript 2 interpreter in C++
             </h2>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               We had a job working with a AAA-game engine in C++ with a policy
               of not allowing third-party libraries. In order to facilitate
               using Flash as a UI design environment (which is now common with
@@ -236,18 +313,19 @@ import Footer from "../components/Footer.astro";
               future titles, and more.
             </p>
           </div>
-          <div class="md:w-1/2">
-            <h2 class="mb-2 font-serif text-lg">
+
+          <div>
+            <h2 class="mb-2 font-serif text-lg font-semibold">
               Predictive Asset Loading and Render Buffering Pipeline in
               ActionScript 2
             </h2>
-            <p class="text-sm leading-6">
-              We wanted to make a Facebook game look more awesome than anyone
-              had ever seen, and make it look like it was a real 3D rendered
-              isometric engine. In order to accomodate the requirements of high
-              resolution sprites with many more frames of animation than a
-              typical Flash game, I came up with an advanced asset manager that
-              intelligently predicted texture usage for pre-caching and
+            <p class="leading-6">
+              The project goal was to make a Facebook game look more awesome
+              than anyone had ever seen, and make it look like it was a real 3D
+              rendered isometric engine. In order to accomodate the requirements
+              of high resolution sprites with many more frames of animation than
+              a typical Flash game, I came up with an advanced asset manager
+              that intelligently predicted texture usage for pre-caching and
               unloading behind the scenes in partial real-time. To render it, I
               created an accompanying asset buffering and rendering pipeline
               that optimized around the limitations of the Flash renderer. The
@@ -260,8 +338,8 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Strengths & Weaknesses -->
-      <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
-        <div class="pr-4 text-right font-bold md:w-1/4">
+      <div class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
+        <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">Strengths</h2>
           <small class="block text-xs text-gray-400"
             >What I am awesome at!</small
@@ -319,8 +397,8 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Weaknesses -->
-      <div class="flex flex-col border-b border-gray-300 py-4 md:flex-row">
-        <div class="pr-4 text-right font-bold md:w-1/4">
+      <div class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
+        <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">Weaknesses</h2>
           <small class="block text-xs text-gray-400"
             >What I am not so awesome at.</small
@@ -359,27 +437,13 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <!-- LinkedIn link -->
-      <div class="w-full border-b border-gray-300 py-4 text-center">
-        <a href="http://www.linkedin.com/in/brianbugh" class="text-blue-600">
-          For my complete work history and testimonials
-          <img
-            src="images/view-my-linkedin-profile.png"
-            width="160"
-            height="33"
-            alt="View Brian Bugh's profile on LinkedIn"
-            class="ml-2 inline-block"
-          />
-        </a>
-      </div>
-
       <!-- Testimonials headline -->
-      <div class="py-6 text-center">
-        <h1 class="font-serif text-2xl">Testimonials</h1>
+      <div class="py-6">
+        <h1 class="font-serif text-4xl">Testimonials</h1>
       </div>
 
       <!-- Testimonials -->
-      <div class="space-y-8">
+      <div class="mb-12 space-y-8">
         <!-- Testimonial 1 -->
         <div class="mx-auto flex max-w-3xl flex-col gap-4 md:flex-row">
           <div class="relative h-24 w-24 shrink-0">
@@ -393,7 +457,7 @@ import Footer from "../components/Footer.astro";
             />
           </div>
           <div>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               &ldquo;I could always count on Brian to do what was necessary to
               get the job done. He also has a very forward thinking approach and
               was able to predict and avoid many pitfalls.&rdquo;
@@ -417,7 +481,7 @@ import Footer from "../components/Footer.astro";
             />
           </div>
           <div>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               &ldquo;Brian displayed a great aptitude both for solving complex
               technical problems and explaining relevant details of his
               solutions in a clear and concise manner. Brian kept the project on
@@ -452,7 +516,7 @@ import Footer from "../components/Footer.astro";
             />
           </div>
           <div>
-            <p class="text-sm leading-6">
+            <p class="leading-6">
               &ldquo;I had the pleasure of working on a team led by Brian at Pi
               Studios. Brian displayed a great aptitude both for solving complex
               technical problems and explaining relevant details of his
@@ -475,8 +539,30 @@ import Footer from "../components/Footer.astro";
           </div>
         </div>
       </div>
-    </main>
 
+      <!-- LinkedIn link -->
+      <div class="w-full border-t border-gray-300 py-4 text-center">
+        <div class="mb-4">For my complete work history and testimonials</div>
+
+        <a
+          href="https://www.linkedin.com/in/brianbugh"
+          class="btn btn-linkedin inline-block w-full md:w-auto"
+        >
+          See my profile on
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 448 512"
+            class="inline h-5 w-5 align-sub"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"
+              fill="currentColor"></path>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </main>
     <Footer />
   </body>
 </Layout>
