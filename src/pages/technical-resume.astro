@@ -2,19 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import TechnologyTable from "../components/TechnologyTable.astro";
 import TechnologyIcons from "../components/TechnologyIcons.astro";
+import TechnologyMiniCards from "../components/TechnologyMiniCards.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <body class="bg-gray-400 font-sans text-stone-800">
+  <div class="flex flex-col space-y-12">
     <TechnologyIcons />
     <!-- Top link -->
-    <div class="w-full py-1 text-center">
+    <div class="w-full border-b border-gray-300 bg-gray-100 py-1 text-center">
       <a href="/" class="text-sm text-blue-600">« Return to the home page</a>
     </div>
 
     <!-- Hero -->
-    <header class="mx-auto max-w-4xl py-8">
+    <header class="mx-auto max-w-4xl border-b-4 border-orange-400 pt-8 pb-4">
       <h1 class="font-serif text-6xl font-medium">Brian Bugh</h1>
       <h2 class="mt-5 font-serif text-2xl">
         Generalist Systems Engineer & Technical Leadership
@@ -23,7 +24,7 @@ import Footer from "../components/Footer.astro";
 
     <main id="resume" class="mx-auto mb-12 max-w-4xl px-8 lg:px-0">
       <!-- About Me -->
-      <div
+      <section
         class="flex flex-col border-t border-b border-gray-300 py-4 md:flex-row"
       >
         <div class="font-bold md:w-1/4">
@@ -67,7 +68,7 @@ import Footer from "../components/Footer.astro";
             team member while ensuring we meet our goals effectively and efficiently.
           </p>
         </div>
-      </div>
+      </section>
 
       <section class="py-16">
         <h2 class="mb-8 font-serif text-4xl font-bold">Domains of Expertise</h2>
@@ -207,160 +208,15 @@ import Footer from "../components/Footer.astro";
           if you have questions about anything not listed here!
         </div>
         <div class="overflow-x-auto">
-          <ul class="mb-6 flex flex-wrap gap-3">
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-html"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> HTML </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-css"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> CSS </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-vue"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Vue 2/3 </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-javascript"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800">
-                JavaScript
-              </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-typescript"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800">
-                TypeScript
-              </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-sql"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> SQL </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-photoshop"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800">
-                Photoshop
-              </span>
-            </li>
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-figma"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Figma </span>
-            </li>
-
-            <!-- <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-svelte"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800">
-                Svelte 4
-              </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-astro"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Astro </span>
-            </li> -->
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-tailwind"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800">
-                Tailwind
-              </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-react"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> React </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-node"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Node.js </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-ruby"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Ruby </span>
-            </li>
-
-            <li
-              class="flex items-center gap-2 rounded-lg border-2 border-gray-300 bg-gray-50 px-6 py-4"
-            >
-              <svg class="h-8 w-8 shrink-0">
-                <use href="#icon-rails"></use>
-              </svg>
-              <span class="text-xl font-semibold text-gray-800"> Rails </span>
-            </li>
-          </ul>
+          <TechnologyMiniCards />
 
           <details
-            class="block cursor-pointer border border-amber-400 bg-amber-100 p-4"
+            class="block cursor-pointer border border-gray-400 bg-gray-100 p-4"
           >
-            <summary>Click to show a more complete technology list</summary>
+            <summary>Click to show more</summary>
 
             <p class="mt-4 font-bold">
-              This is not exhaustive list, just a list of common technologies
-              worth mentioning.
+              Other common technologies and tools I have experience with:
             </p>
 
             <div class="mt-4">
@@ -371,7 +227,7 @@ import Footer from "../components/Footer.astro";
       </section>
 
       <!-- Technical Highlights -->
-      <div class="border-b border-gray-300 py-12">
+      <section class="border-b border-gray-300 py-12">
         <div class="mb-4 py-4">
           <h2 class="mb-2 font-serif text-4xl font-bold">Project Highlights</h2>
           <p class="mb-4 font-serif text-sm text-gray-500">
@@ -483,10 +339,10 @@ import Footer from "../components/Footer.astro";
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Strengths & Weaknesses -->
-      <div class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
+      <section class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
         <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">Strengths</h2>
           <small class="block text-xs text-gray-400"
@@ -541,10 +397,10 @@ import Footer from "../components/Footer.astro";
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- Weaknesses -->
-      <div class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
+      <section class="flex flex-col border-b border-gray-300 py-12 md:flex-row">
         <div class="font-bold md:w-1/4">
           <h2 class="mb-1 font-serif text-lg">Weaknesses</h2>
           <small class="block text-xs text-gray-400"
@@ -579,15 +435,15 @@ import Footer from "../components/Footer.astro";
             <li>
               Getting the best work out of me involves putting me ahead of
               others on projects doing the foundation, predictive
-              problem-solving, and pioneering work. Maintenance work and
-              long-tail end of project bug fixing is totally fine, but my
+              problem-solving, and pioneering work. I can definitely do
+              maintenance work and long-tail end of project bug fixing, but my
               strongest gifts lie in the pre-planning and early implementation
               phases of projects where I can scaffold the best path forward for
               others to follow.
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- Testimonials headline -->
       <div class="py-6">
@@ -595,7 +451,7 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Testimonials -->
-      <div class="mb-12 space-y-8">
+      <section class="mb-12 space-y-8">
         <!-- Testimonial 1 -->
         <div class="mx-auto flex max-w-3xl flex-col gap-4 md:flex-row">
           <div class="relative h-24 w-24 shrink-0">
@@ -690,7 +546,7 @@ import Footer from "../components/Footer.astro";
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- LinkedIn link -->
       <div class="w-full border-t border-gray-300 py-4 text-center">
@@ -716,5 +572,5 @@ import Footer from "../components/Footer.astro";
       </div>
     </main>
     <Footer />
-  </body>
+  </div>
 </Layout>

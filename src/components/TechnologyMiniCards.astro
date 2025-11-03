@@ -1,0 +1,30 @@
+---
+const skills = [
+  { icon: "html", name: "HTML" },
+  { icon: "css", name: "CSS" },
+  { icon: "vue", name: "Vue 2/3" },
+  { icon: "javascript", name: "JavaScript" },
+  { icon: "typescript", name: "TypeScript" },
+  { icon: "sql", name: "SQL" },
+  { icon: "photoshop", name: "Photoshop" },
+  { icon: "figma", name: "Figma" },
+  { icon: "tailwind", name: "Tailwind" },
+  { icon: "react", name: "React" },
+  { icon: "node", name: "Node.js" },
+  { icon: "ruby", name: "Ruby" },
+  { icon: "rails", name: "Rails" },
+];
+---
+
+<ul class="mb-6 flex flex-wrap gap-3">
+  {
+    skills.map((skill) => (
+      <li class="flex items-center gap-2 rounded border-2 border-gray-300 bg-gray-50 px-6 py-4">
+        <svg class="h-8 w-8 shrink-0">
+          <use href={`#icon-${skill.icon}`} />
+        </svg>
+        <span class="text-xl font-semibold text-gray-800">{skill.name}</span>
+      </li>
+    ))
+  }
+</ul>
