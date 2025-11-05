@@ -1,0 +1,23 @@
+---
+const currentPath = Astro.url.pathname;
+
+const isActive = (path: string) =>
+  currentPath === path || currentPath === path + "/";
+
+const navClass = (path: string) =>
+  `border-b-4 pb-1 ${
+    isActive(path) ? "border-orange-400" : "border-transparent"
+  }`;
+---
+
+<nav
+  class="flex flex-row items-center justify-center bg-neutral-800 px-8 py-5 text-lg font-semibold text-white md:justify-end"
+>
+  <div class="flex flex-row justify-center gap-6 md:justify-end">
+    <a href="/" class={navClass("/")}>About Me</a>
+    <a href="/technical-resume" class={navClass("/technical-resume")}>
+      Technical Resume
+    </a>
+    <!-- <a href="/contact" class={navClass("/contact")}>Contact</a> -->
+  </div>
+</nav>
