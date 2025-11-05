@@ -6,12 +6,12 @@ const isActive = (path: string) =>
 
 const navClass = (path: string) =>
   `border-b-4 pb-1 ${
-    isActive(path) ? "border-orange-400" : "border-transparent"
+    isActive(path) ? "font-semibold border-orange-400" : "border-transparent"
   }`;
 ---
 
 <nav
-  class="flex flex-row items-center justify-center bg-neutral-800 px-8 py-5 text-lg font-semibold text-white md:justify-end"
+  class="flex flex-row items-center justify-center bg-neutral-800 px-8 py-5 text-lg text-white md:justify-end"
 >
   <div class="flex flex-row justify-center gap-6 md:justify-end">
     <a href="/" class={navClass("/")}>About Me</a>
