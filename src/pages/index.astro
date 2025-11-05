@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Testimonial from "../components/Testimonial.astro";
+import ContactSection from "../components/ContactSection.astro";
 ---
 
 <Layout>
@@ -74,6 +75,13 @@ import Testimonial from "../components/Testimonial.astro";
             <div class="text-center">
               <a href="#connect" class="btn-primary btn-lg mt-4 inline-block">
                 Connect with me →
+              </a>
+
+              <a
+                href="/technical-resume"
+                class="btn-secondary btn-lg mt-4 inline-block"
+              >
+                View My Technical Resume →
               </a>
             </div>
           </div>
@@ -457,141 +465,7 @@ import Testimonial from "../components/Testimonial.astro";
       />
 
       <!-- Connect -->
-      <section
-        id="connect"
-        class="divider-from-gray-900 bg-blue-50 py-20 md:py-32"
-      >
-        <div class="mx-auto max-w-6xl px-6">
-          <div class="grid gap-12 lg:grid-cols-2">
-            <div class="flex flex-col">
-              <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-                Let's Connect
-              </h2>
-              <p class="mb-3 text-xl leading-relaxed text-gray-700">
-                Think we might be a good fit? Want to learn more? Just want to
-                share the cool thing you're working on? I don't charge for
-                initial discovery calls, so let's chat!
-              </p>
-              <p class="mb-3 text-xl leading-relaxed text-gray-700">
-                Reach out on LinkedIn, see where our community overlaps on
-                Facebook, or send me a message. I respond to anyone who makes a
-                sincere effort to connect.
-              </p>
-              <div class="flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="https://www.linkedin.com/in/brianbugh"
-                  class="btn-secondary block w-full md:w-auto"
-                >
-                  Connect on
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 448 512"
-                    class="inline h-5 w-5 align-sub"
-                  >
-                    <path
-                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"
-                      fill="currentColor"></path>
-                  </svg>
-                  LinkedIn
-                </a>
-                <a
-                  href="https://www.facebook.com/brianbugh/"
-                  class="btn-secondary block w-full md:w-auto"
-                >
-                  Find me on
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 448 512"
-                    class="inline h-5 w-5 align-sub"
-                  >
-                    <path
-                      d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
-                      fill="currentColor"></path>
-                  </svg>
-                  Facebook
-                </a>
-              </div>
-            </div>
-
-            <div class="rounded-lg border-2 border-blue-200 bg-white p-6">
-              <h3 class="mb-6 text-2xl font-bold text-gray-900">
-                Send a Message
-              </h3>
-              <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                class="space-y-4"
-              >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="172169b3-9425-4cf5-bc8d-d66eb1ff43f2"
-                />
-
-                <input
-                  type="checkbox"
-                  name="botcheck"
-                  class="hidden"
-                  style="display: none"
-                />
-
-                <input
-                  type="hidden"
-                  name="subject"
-                  value="New Submission from brianbugh.me contact form"
-                />
-
-                <div>
-                  <label
-                    for="name"
-                    class="mb-2 block text-sm font-semibold text-gray-700"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="w-full rounded border border-gray-300 px-4 py-2 focus:border-orange-600 focus:outline-none"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    for="email"
-                    class="mb-2 block text-sm font-semibold text-gray-700"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="w-full rounded border border-gray-300 px-4 py-2 focus:border-orange-600 focus:outline-none"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    for="message"
-                    class="mb-2 block text-sm font-semibold text-gray-700"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="w-full rounded border border-gray-300 px-4 py-2 focus:border-orange-600 focus:outline-none"
-                    required></textarea>
-                </div>
-                <button type="submit" class="btn-primary w-full">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactSection />
     </main>
 
     <!-- Footer -->
