@@ -8,22 +8,18 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <div class="flex flex-col space-y-12">
+  <div class="flex flex-col border-t border-gray-300">
     <TechnologyIcons />
-    <!-- Top link -->
-    <div class="w-full border-b border-gray-300 bg-gray-100 py-1 text-center">
-      <a href="/" class="text-sm text-blue-600">« Return to the home page</a>
-    </div>
 
     <!-- Hero -->
-    <header class="mx-auto max-w-4xl border-b-4 border-orange-400 pt-8 pb-4">
+    <header class="mx-auto max-w-4xl px-8 pt-8 pb-4 text-center">
       <h1 class="font-serif text-6xl font-medium">Brian Bugh</h1>
       <h2 class="mt-5 font-serif text-2xl">
         Generalist Systems Engineer & Technical Leadership
       </h2>
     </header>
 
-    <main class="divide-y divide-gray-300 px-8 lg:px-0">
+    <main class="divide-y divide-gray-300 border-t border-gray-300">
       <ResumeSection title="About Me">
         <p>
           30 years of experience in a resume format would be very boring to
@@ -176,7 +172,7 @@ import Footer from "../components/Footer.astro";
       </ResumeSection>
 
       <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-50 py-12 text-center font-serif text-5xl font-bold text-gray-900"
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
       >
         Technology
       </h2>
@@ -185,7 +181,7 @@ import Footer from "../components/Footer.astro";
         <TechnologyMiniCards />
 
         <details
-          class="block cursor-pointer border-2 border-gray-200 bg-gray-50 p-4"
+          class="block cursor-pointer border-2 border-gray-200 bg-gray-100 p-4"
         >
           <summary>Click to show more</summary>
 
@@ -332,9 +328,9 @@ import Footer from "../components/Footer.astro";
       </ResumeSection>
 
       <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-50 py-12 text-center font-serif text-5xl font-bold text-gray-900"
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
       >
-        Working Style
+        Personal Attributes
       </h2>
 
       <ResumeSection title="Strengths">
@@ -422,7 +418,7 @@ import Footer from "../components/Footer.astro";
       <ResumeSection title="Testimonials">
         <!-- Testimonial 1 -->
         <div
-          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-50 p-6 md:flex-row"
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row"
         >
           <div class="relative h-24 w-24 shrink-0">
             <img
@@ -444,7 +440,7 @@ import Footer from "../components/Footer.astro";
 
         <!-- Testimonial 2 -->
         <div
-          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-50 p-6 md:flex-row"
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row"
         >
           <div class="relative h-24 w-24 shrink-0">
             <img
@@ -477,7 +473,7 @@ import Footer from "../components/Footer.astro";
 
         <!-- Testimonial 3 -->
         <div
-          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-50 p-6 md:flex-row"
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-300 bg-gray-100 p-6 md:flex-row"
         >
           <div class="relative h-24 w-24 shrink-0">
             <img
