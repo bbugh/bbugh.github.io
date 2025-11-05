@@ -28,12 +28,13 @@ import Footer from "../components/Footer.astro";
           <!-- FIXME: add real contact setting -->
           For details about anything, please <a
             href="/contact"
-            class="text-blue-600 underline">get in touch</a
+            class="text-blue-600 underline visited:text-purple-600"
+            >get in touch</a
           >!
         </p>
 
         <div class="space-y-1">
-          <h3 class="text-lg font-bold text-orange-600">
+          <h3 class="font-serif text-xl font-bold">
             Generalist System Engineer
           </h3>
           <p>
@@ -49,7 +50,7 @@ import Footer from "../components/Footer.astro";
           </p>
         </div>
         <div class="space-y-1">
-          <h3 class="text-lg font-bold text-orange-600">Leadership</h3>
+          <h3 class="font-serif text-xl font-bold">Leadership</h3>
           <p>
             <span class="font-bold">
               I've led multiple teams of developers, designers, sales, etc
@@ -334,7 +335,7 @@ import Footer from "../components/Footer.astro";
       </h2>
 
       <ResumeSection title="Strengths">
-        <ul class="list-inside list-disc space-y-2">
+        <ul class="list-outside list-disc space-y-2 pl-4">
           <li>
             Predicting failure outcomes and spotting "gap problems", then
             writing code or guiding the process/team to avoid them. As a result,
@@ -382,13 +383,7 @@ import Footer from "../components/Footer.astro";
       </ResumeSection>
 
       <ResumeSection title="Weaknesses">
-        <ul class="list-inside list-disc space-y-2">
-          <li>
-            2D/3D visual math, particularly geometry. Despite my strong math
-            skills in other areas and extensive tutoring by team members I have
-            never clicked with spatial math. Thankfully most modern tools handle
-            this for us.
-          </li>
+        <ul class="list-outside list-disc space-y-2 pl-4">
           <li>
             Working with low-experienced developers on a production team: a
             previous manager said that I am excellent at taking the 80-100% and
@@ -397,10 +392,16 @@ import Footer from "../components/Footer.astro";
             However, I love teaching students who are new to development.
           </li>
           <li>
+            2D/3D visual math, particularly geometry. Despite my strong math
+            skills in other areas, I have never clicked with spatial math.
+            Thankfully, this is rarely relevant, and even then most modern
+            engines handle this for us.
+          </li>
+          <li>
             I can organize myself, and I can create great plans for teams, but I
             am not a project manager and I do not do well keeping track of all
             minor daily details of the moving pieces of a large project. I work
-            eceptionally well when paired with a strong project manager who can
+            exceptionally well when paired with a strong project manager who can
             handle the logistics of keeping the day-to-day details straight,
             while I focus on the technical strategy, architecture, and team
             leadership.
@@ -503,6 +504,14 @@ import Footer from "../components/Footer.astro";
               <a>John Broadway</a>
             </div>
           </div>
+        </div>
+        <div class="text-center">
+          <a
+            class="btn btn-secondary mb-6 inline-block"
+            href="https://www.linkedin.com/in/brianbugh/details/recommendations/"
+          >
+            See all of my recommendations on LinkedIn
+          </a>
         </div>
       </ResumeSection>
     </main>
