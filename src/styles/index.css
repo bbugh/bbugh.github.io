@@ -40,7 +40,7 @@
 }
 
 .btn-lg {
-  @apply px-12 py-4 text-lg;
+  @apply px-8 py-4 text-lg sm:px-12;
 }
 
 .tech-icon {
