@@ -1,0 +1,507 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TechnologyTable from "../components/TechnologyTable.astro";
+import ResumeSection from "../components/ResumeSection.astro";
+import TechnologyIcons from "../components/TechnologyIcons.astro";
+import TechnologyMiniCards from "../components/TechnologyMiniCards.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <div class="flex flex-col border-t border-gray-300">
+    <TechnologyIcons />
+
+    <!-- Hero -->
+    <header class="mx-auto mb-4 max-w-4xl px-8 pt-8 pb-4">
+      <h1 class="font-serif text-6xl font-medium">Brian Bugh</h1>
+      <h2 class="mt-2 font-serif text-2xl">
+        Generalist Systems Engineer & Technical Leadership
+      </h2>
+      <p class="mt-4">
+        This technical resume spans 30 years of in-depth architecture,
+        engineering, and development experience. To learn more about my work in
+        entrepreneurship, consulting, and impact initiatives, check out the
+        <a href="/" class="text-blue-600 underline visited:text-purple-600"
+          >About Me</a
+        >
+        page.
+      </p>
+    </header>
+
+    <main class="divide-y divide-gray-300 border-t border-gray-300">
+      <ResumeSection title="About Me">
+        <div class="space-y-1">
+          <h3 class="font-serif text-xl font-bold">
+            Generalist System Engineer
+          </h3>
+          <p>
+            <span class="font-bold">
+              I have been a full stack, systems, and embedded software engineer
+              for 30 years.
+            </span>
+            When someone says "what can you do?", the honest answer is "almost anything".
+            I specialize in not specializing: I am an technology generalist who can
+            quickly adapt to new technologies and domains. If I don't know it already,
+            I will learn it quickly. I have worked in industries ranging from healthcare
+            to video games to finance to education.
+          </p>
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-serif text-xl font-bold">Leadership</h3>
+          <p>
+            <span class="font-bold">
+              I've led multiple teams of developers, designers, sales, etc
+            </span>
+            in my role as technical cofounder and/or CTO of multiple startups, as
+            well as leading teams in larger organizations. My leadership style is
+            collaborative and empowering, focused on bringing out the best in each
+            team member, while ensuring we meet our goals effectively and efficiently.
+          </p>
+        </div>
+      </ResumeSection>
+
+      <ResumeSection title="Domains of Expertise">
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Full-Stack Web Development
+          </h3>
+          <p class="leading-6">
+            30 years building everything from early e-commerce platforms to
+            modern web applications. I've worked across the entire stack and can
+            jump into any part of your system.
+          </p>
+          <ul class="list-disc pl-5">
+            <li>
+              <span class="font-semibold">Frontend:</span> HTML, CSS, JavaScript,
+              Vue, React, Tailwind
+            </li>
+            <li>
+              <span class="font-semibold">Backend:</span> Ruby/Rails, Node.js, PHP,
+              Python, ASP.NET, Elixir/Phoenix
+            </li>
+            <li>I can build it, fix it, or lead the team doing it</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Data Engineering & Architecture
+          </h3>
+          <p class="leading-6">
+            26 years designing databases, data pipelines, and analytics systems.
+            I've built data infrastructure for everything from the UN to
+            enterprise data warehouses capturing decades of historical data.
+          </p>
+          <ul class="list-disc pl-5">
+            <li>Database design & optimization</li>
+            <li>ETL pipelines & data lakes (BigQuery, Snowflake)</li>
+            <li>SQL, data modeling, analytics systems</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Product Design & UX
+          </h3>
+          <p class="leading-6">
+            I'm a developer who <span class="italic">
+              actually understands
+            </span> users. I've built products people love by combining technical
+            implementation with human-centered design. This combination has been
+            a key success metric for many products.
+          </p>
+          <ul class="list-disc pl-5">
+            <li>User research & product design</li>
+            <li>Interface design & prototyping</li>
+            <li>Technical implementation of design systems</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Technical Leadership
+          </h3>
+          <p class="leading-6">
+            I've led engineering teams and served as CTO for multiple startups.
+            I know how to build teams, set technical direction, and translate
+            between business needs and technical execution.
+          </p>
+          <ul class="list-disc pl-5">
+            <li>CTO & technical strategy</li>
+            <li>Team building & mentorship</li>
+            <li>Architecture decisions & technical roadmaps</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Game Engine Development
+          </h3>
+          <p class="leading-6">
+            Worked on many AAA games at the system level, including a
+            near-complete Xbox 360 rewrite of idTech 3, the Lua-based quest
+            system in Mercenaries 2, a production ActionScript 2 game engine,
+            and multiple Rock Band platforms. I understand high performance,
+            memory management, algorithms, and multi-platform low-level systems.
+          </p>
+          <ul class="list-disc pl-5">
+            <li>Engine architecture & design</li>
+            <li>C/C++, performance optimization</li>
+            <li>Unity experience</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            DevOps & Infrastructure
+          </h3>
+          <p class="leading-6">
+            Set up and maintain the systems that keep applications running. From
+            Linux servers to Docker containers to cloud deployments, I can build
+            and manage your infrastructure (though you'll want a focused system
+            administrator to handle day-to-day ops).
+          </p>
+          <ul class="list-disc pl-5">
+            <li>Linux system administration</li>
+            <li>Docker, CI/CD, deployment automation</li>
+            <li>Cloud infrastructure & monitoring</li>
+          </ul>
+        </div>
+      </ResumeSection>
+
+      <h2
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
+      >
+        Technology
+      </h2>
+
+      <ResumeSection title="Tools & Frameworks">
+        <TechnologyMiniCards />
+
+        <details
+          class="block cursor-pointer border-2 border-gray-200 bg-gray-100 p-4"
+        >
+          <summary>Click to show more</summary>
+
+          <p class="mt-4 font-bold">
+            Other common technologies and tools I have experience with:
+          </p>
+
+          <div class="mt-4">
+            <TechnologyTable />
+          </div>
+        </details>
+      </ResumeSection>
+
+      <ResumeSection title="Technical Highlights">
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Custom Linux Audio / Electron Kiosk System
+          </h3>
+          <!-- Linux Audio / Electron Kiosk -->
+          <p class="leading-6">
+            For a client's interactive kiosk system, on a shoestring budget, I
+            created a custom Linux-based OS that booted directly into a secure
+            Electron app kiosk, featuring:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>Surround sound (surprisingly difficult on Linux)</li>
+            <li>Automatic cloud updates</li>
+            <li>Remote device management</li>
+            <li>
+              Advanced audio engine handling multiple overlapping tracks with
+              smooth crossfading and pausing
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Rewrite of an internal banking administration system
+          </h3>
+          <p class="leading-6">
+            A large bank's recently developed internal administration system was
+            buggy, insecure, and very slow. The original contractor team took 6
+            months to build it (estimated at 1 month). I completely rewrote it
+            from scratch in 2 weeks, delivering:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>Dramatically improved performance</li>
+            <li>
+              No obvious critical security vulnerabilities (SQL injection,
+              client-only validation)
+            </li>
+            <li>Much more intuitive user interface</li>
+            <li>Built in ASP.net with proper architecture</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Custom Xbox 360 file packaging system
+          </h3>
+          <p class="leading-6">
+            Microsoft's secure file system for signing XBOX packages was slow
+            and not very secure. I created a custom file packaging system that
+            delivered:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>Reduced load times from ~45 seconds to &lt;8 seconds</li>
+            <li>Intelligent file data distribution</li>
+            <li>Hand-tuned custom compression to minimize file size</li>
+            <li>Greatly reduced chance of hacking</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Multiple Continuous Integration and Automated Testing Tools
+          </h3>
+          <p class="leading-6">
+            For multiple projects I created custom automated testing, building,
+            and continuous integration tools that delivered:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>
+              Security auto-attacks (SQL injection, timing overflows, unusual
+              user behaviors)
+            </li>
+            <li>
+              Customizable automated testing procedures scriptable by
+              non-programmers
+            </li>
+            <li>Cross-platform asset packaging and management</li>
+            <li>Worked for both web and games (uncommon at the time)</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Spec-complete, feature enhanced ActionScript 2 interpreter in <span
+              class="whitespace-nowrap">C++</span
+            >
+          </h3>
+          <p class="leading-6">
+            While working with a AAA-game engine in C++ with a strict
+            no-third-party-libraries policy, I wrote a complete ActionScript 2
+            interpreter to enable Flash as a UI design environment, with:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>Spec-complete implementation with enhanced features</li>
+            <li>Thread/process-safe asynchronous updates</li>
+            <li>
+              Fully automated spec test suite self-written in ActionScript
+            </li>
+            <li>
+              Extensive game-enhanced <span class="font-mono">UIComponent</span>
+              library for Flash artists
+            </li>
+            <li>Enabled rapid UI creation for current and future titles</li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="font-serif text-xl font-semibold capitalize">
+            Predictive Asset Loading and Render Buffering Pipeline in
+            ActionScript 2
+          </h3>
+          <p class="leading-6">
+            To make a Facebook game look more impressive than anyone had seen
+            with high-resolution sprites and extensive animation frames, I built
+            an advanced rendering system featuring:
+          </p>
+          <ul class="list-disc space-y-1 pl-6">
+            <li>Asset manager that intelligently predicted texture usage</li>
+            <li>Automatic pre-caching and unloading in partial real-time</li>
+            <li>
+              Custom asset buffering and rendering pipeline optimized for Flash
+            </li>
+            <li>Pre-compiler for automatic optimization</li>
+            <li>
+              Allowed artists to maximize creativity while system handled
+              performance
+            </li>
+          </ul>
+        </div>
+      </ResumeSection>
+
+      <h2
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
+      >
+        Personal Attributes
+      </h2>
+
+      <ResumeSection title="Strengths">
+        <ul class="list-outside list-disc space-y-2 pl-4">
+          <li>
+            Predicting failure outcomes and spotting "gap problems", then
+            writing code or guiding the process/team to avoid them. As a result,
+            I have a lot of experience in code/process optimization, robustness,
+            and security.
+          </li>
+          <li>
+            Data architecture, file systems, resource allocation, optimization,
+            loading, and caching. I absolutely love resources and huge datasets.
+          </li>
+          <li>
+            Starting projects and preparing foundational design and architecture
+            for others to come along and build on top of.
+          </li>
+          <li>
+            Designing frameworks and tools for empowering programmers (or
+            others) to do better work and/or make their lives easier.
+          </li>
+          <li>
+            Leadership methods that produce optimal steady output from creative
+            teams over long periods of time that doesn't involve crunch hours or
+            dehumanizing practices. Six months into a project my teams work
+            better and happier, not worse and sad from burn out. People love
+            working for me.
+          </li>
+          <li>
+            A strong work ethic, focused on getting things done because they
+            need doing. I am known for focusing for long periods of time on
+            single tasks without getting fatigued or bored.
+          </li>
+          <li>
+            Doing things right the first time, so no one ever has to do them
+            again, while also doing it quickly.
+          </li>
+          <li>
+            Product design, particularly in human interactions. I can accurately
+            judge how people will feel using software and create/enhance designs
+            to optimize for the human experience.
+          </li>
+          <li>
+            Much to the chagrin of some teams, I am very good at finding bugs
+            and breaking things.
+          </li>
+        </ul>
+      </ResumeSection>
+
+      <ResumeSection title="Weaknesses">
+        <ul class="list-outside list-disc space-y-2 pl-4">
+          <li>
+            Working with low-experienced developers on a production team: a
+            previous manager said that I am excellent at taking the 80-100% and
+            getting 150% out of them, but not great at reaching below that 80%
+            to bring them up. I work best with other experienced developers.
+            However, I love teaching students who are new to development.
+          </li>
+          <li>
+            2D/3D visual math, particularly geometry. Despite my strong math
+            skills in other areas, I have never clicked with spatial math.
+            Thankfully, this is rarely relevant, and even then most modern
+            engines handle this for us.
+          </li>
+          <li>
+            I can organize myself, and I can create great plans for teams, but I
+            am not a project manager and I do not do well keeping track of all
+            minor daily details of the moving pieces of a large project. I work
+            exceptionally well when paired with a strong project manager who can
+            handle the logistics of keeping the day-to-day details straight,
+            while I focus on the technical strategy, architecture, and team
+            leadership.
+          </li>
+          <li>
+            Getting the best work out of me involves putting me ahead of others
+            on projects doing the foundation, predictive problem-solving, and
+            pioneering work. I can definitely do maintenance work and long-tail
+            end of project bug fixing, but my strongest gifts lie in the
+            pre-planning and early implementation phases of projects where I can
+            scaffold the best path forward for others to follow.
+          </li>
+        </ul>
+      </ResumeSection>
+      <ResumeSection title="Testimonials">
+        <!-- Testimonial 1 -->
+        <div
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row"
+        >
+          <div class="relative h-24 w-24 shrink-0">
+            <img
+              src="images/photo-josh.jpg"
+              class="h-full w-full rounded-full object-cover"
+            />
+          </div>
+          <div>
+            <p class="leading-6">
+              &ldquo;I could always count on Brian to do what was necessary to
+              get the job done. He also has a very forward thinking approach and
+              was able to predict and avoid many pitfalls.&rdquo;
+            </p>
+            <div class="mt-1 text-right font-bold">Josh Heenan</div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row"
+        >
+          <div class="relative h-24 w-24 shrink-0">
+            <img
+              src="images/photo-daniel.jpg"
+              class="absolute inset-0 h-full w-full rounded-full object-cover"
+            />
+          </div>
+          <div>
+            <p class="leading-6">
+              &ldquo;It's not only a personal pleasure to work with Brian, but
+              he's also a superb software engineer and natural team leader.
+              Brian is able to very effectively look ahead and foresee
+              development issues long before they were apparent and would always
+              lead the charge from the front. Brian has an excellent work ethic
+              and invests himself in his work like few others I've known. For
+              this reason I consider Brian to be one of the best team leaders
+              I've worked with and I look forward to working with Brian again.
+              He comes with my absolute highest recommendations.&rdquo;
+            </p>
+            <div class="mt-1 text-right font-bold">Daniel Casslassy</div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div
+          class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-300 bg-gray-100 p-6 md:flex-row"
+        >
+          <div class="relative h-24 w-24 shrink-0">
+            <img
+              src="images/photo-john.jpg"
+              class="h-full w-full rounded-full object-cover"
+            />
+          </div>
+          <div>
+            <p class="leading-6">
+              &ldquo;I had the pleasure of working on a team led by Brian at Pi
+              Studios. Brian displayed a great aptitude both for solving complex
+              technical problems and explaining relevant details of his
+              solutions in a clear and concise manner. Brian kept the project on
+              track without making his team members feel micromanaged, fostering
+              creativity and encouraging everyone to provide input for important
+              decisions. Furthermore, Brian took any available opportunity to
+              help members of his team learn new skills that they could apply to
+              the project, and I found his guidance invaluable on many
+              occasions. Regardless of the situation, Brian was always open,
+              approachable, and eager to do whatever he could to ensure the
+              completion of tasks, making it easy to hash out development issues
+              whenever the need arose. Working with Brian was a very rewarding
+              experience and I would be happy to have the opportunity to do so
+              again.&rdquo;
+            </p>
+            <div class="mt-1 text-right font-bold">John Broadway</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            class="btn btn-secondary mb-6 inline-block"
+            href="https://www.linkedin.com/in/brianbugh/details/recommendations/"
+          >
+            See all of my recommendations on LinkedIn
+          </a>
+        </div>
+      </ResumeSection>
+    </main>
+
+    <Footer />
+  </div>
+</Layout>

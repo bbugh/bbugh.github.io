@@ -15,6 +15,16 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  fixmes:
+    name: FIXME check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - name: FIXME check
+        uses: bbugh/action-fixme-check@v1.1.0
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build with Eleventy
+      - name: Build site
         run: pnpm build
 
       - name: Upload artifact

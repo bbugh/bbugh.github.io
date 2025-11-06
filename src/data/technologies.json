@@ -1,0 +1,183 @@
+[
+  {
+    "category": "Frontend",
+    "items": [
+      {
+        "name": "HTML/CSS",
+        "experience": 30,
+        "lastUsed": "Current",
+        "proficiency": "Master"
+      },
+      {
+        "name": "JavaScript",
+        "experience": 29,
+        "lastUsed": "Current",
+        "proficiency": "Master"
+      },
+      {
+        "name": "TypeScript",
+        "experience": 9,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Vue",
+        "experience": 8,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Tailwind",
+        "experience": 5,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "React",
+        "experience": 2,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "Svelte",
+        "experience": 0.5,
+        "lastUsed": "2024",
+        "proficiency": "Familiar"
+      }
+    ]
+  },
+  {
+    "category": "Backend",
+    "items": [
+      {
+        "name": "SQL/Databases",
+        "experience": 26,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Ruby/Rails",
+        "experience": 15,
+        "lastUsed": "2023",
+        "proficiency": "Master"
+      },
+      {
+        "name": "Node.js",
+        "experience": 6,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "PHP",
+        "experience": 5,
+        "lastUsed": "2014",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "Python/Django",
+        "experience": 1,
+        "lastUsed": "2015",
+        "proficiency": "Familiar"
+      },
+      {
+        "name": "Elixir",
+        "experience": 1,
+        "lastUsed": "2018",
+        "proficiency": "Familiar"
+      }
+    ]
+  },
+  {
+    "category": "Systems",
+    "items": [
+      {
+        "name": "C/C++",
+        "experience": 8,
+        "lastUsed": "2022",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "Java",
+        "experience": 2,
+        "lastUsed": "2005",
+        "proficiency": "Familiar"
+      },
+      {
+        "name": "Rust",
+        "experience": 0.5,
+        "lastUsed": "2024",
+        "proficiency": "Familiar"
+      }
+    ]
+  },
+  {
+    "category": "Infrastructure",
+    "items": [
+      {
+        "name": "Bash",
+        "experience": 20,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "git",
+        "experience": 15,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "macOS",
+        "experience": 15,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Windows",
+        "experience": 15,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "Linux",
+        "experience": 8,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "Docker",
+        "experience": 5,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "GCP",
+        "experience": 4,
+        "lastUsed": "Current",
+        "proficiency": "Proficient"
+      },
+      {
+        "name": "AWS",
+        "experience": 2,
+        "lastUsed": "2024",
+        "proficiency": "Familiar"
+      }
+    ]
+  },
+  {
+    "category": "Design",
+    "items": [
+      {
+        "name": "Photoshop/Photopea",
+        "experience": 31,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Figma",
+        "experience": 3,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      }
+    ]
+  }
+]
