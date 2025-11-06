@@ -29,9 +29,9 @@ import ContactSection from "../components/ContactSection.astro";
 
     <main>
       <!-- Quick Intro -->
-      <section class="mx-auto max-w-4xl px-0 py-20 sm:px-6 md:py-20">
+      <section class="mx-auto max-w-4xl px-0 py-20 md:py-20">
         <div
-          class="mx-auto max-w-[70ch] border-t border-b border-orange-200 bg-white p-6 sm:rounded-2xl sm:border-2 md:p-12"
+          class="mx-auto max-w-prose border-t border-b border-orange-200 bg-white p-6 sm:rounded-2xl sm:border-2 sm:px-6 md:p-12"
         >
           <h2
             class="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
@@ -93,7 +93,9 @@ import ContactSection from "../components/ContactSection.astro";
       </section>
 
       <!-- We Should Work Together -->
-      <section class="border-y-2 border-orange-200 bg-white py-20 md:py-32">
+      <section
+        class="border-y-2 border-orange-200 bg-white py-16 sm:py-24 md:py-32"
+      >
         <div class="mx-auto max-w-5xl px-6">
           <h2
             class="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
@@ -194,8 +196,8 @@ import ContactSection from "../components/ContactSection.astro";
       </section>
 
       <!-- How I Help -->
-      <section class="bg-orange-50 py-20 md:py-32">
-        <div class="mx-auto max-w-5xl px-6">
+      <section class="bg-orange-50 py-16 sm:py-24 md:py-32">
+        <div class="mx-auto max-w-5xl px-3 md:px-6">
           <h2
             class="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
           >
@@ -328,138 +330,148 @@ import ContactSection from "../components/ContactSection.astro";
       />
 
       <!-- Career Highlights -->
-      <section class="divider-from-gray-900 px-6 py-20 md:py-32">
-        <h2
-          class="mb-4 text-center text-3xl font-bold text-gray-900 sm:text-4xl md:text-6xl"
-        >
-          Career Highlights
-        </h2>
-        <p class="mb-8 text-center text-gray-700 sm:text-lg">
-          I've had a variety of projects over the last 30 years. Here are some
-          that have had the biggest impact or I'm most proud of.
-        </p>
+      <section class="divider-from-gray-900 py-16 sm:py-24 md:py-32">
+        <div class="mx-auto max-w-5xl px-3 md:px-6">
+          <h2
+            class="mb-4 text-center text-3xl font-bold text-gray-900 sm:text-4xl md:text-6xl"
+          >
+            Career Highlights
+          </h2>
+          <p class="mb-8 text-center text-gray-700 sm:text-lg">
+            I've had a variety of projects over the last 30 years. Here are some
+            that have had the biggest impact or I'm most proud of.
+          </p>
 
-        <div class="grid gap-8 lg:grid-cols-2">
-          <!-- UN NGLS -->
-          <div class="rounded-lg border-2 border-orange-200 bg-white p-8">
-            <img
-              src="/images/un_ngls_2016_summit_on_refugees_migrants.webp"
-              alt="UN NGLS 2016 Summit on Refugees & Migrants"
-              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-            />
-
+          <div class="grid gap-8 lg:grid-cols-2">
+            <!-- UN NGLS -->
             <div
-              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
             >
-              Impact
+              <img
+                src="/images/un_ngls_2016_summit_on_refugees_migrants.webp"
+                alt="UN NGLS 2016 Summit on Refugees & Migrants"
+                class="mb-6 aspect-3/2 w-full rounded border border-gray-300 object-cover object-right sm:aspect-2/1 lg:aspect-3/2"
+              />
+
+              <div
+                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              >
+                Impact
+              </div>
+              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+                UN NGLS 2016 Summit on Refugees & Migrants
+              </h3>
+              <p class="mb-3 text-lg font-medium text-orange-600">
+                Data Engineering
+              </p>
+              <p class="text-base leading-relaxed text-gray-700">
+                As part of the UN NGLS's data initiative for the UN's 2016
+                Summit on Refugees and Migrants, I managed complex data and
+                created reports accessible to non-technical audiences while
+                protecting at-risk participants.
+              </p>
             </div>
-            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-              UN NGLS 2016 Summit on Refugees & Migrants
-            </h3>
-            <p class="mb-3 text-lg font-medium text-orange-600">
-              Data Engineering
-            </p>
-            <p class="text-base leading-relaxed text-gray-700">
-              As part of the UN NGLS's data initiative for the UN's 2016 Summit
-              on Refugees and Migrants, I managed complex data and created
-              reports accessible to non-technical audiences while protecting
-              at-risk participants.
-            </p>
-          </div>
 
-          <!-- iXperience -->
-          <div class="rounded-lg border-2 border-orange-200 bg-white p-8">
-            <img
-              src="/images/ixperience-mentoring.webp"
-              alt="iXperience Cape Town"
-              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-            />
-
+            <!-- iXperience -->
             <div
-              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
             >
-              Education
+              <img
+                src="/images/ixperience-mentoring.webp"
+                alt="iXperience Cape Town"
+                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+              />
+
+              <div
+                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              >
+                Education
+              </div>
+              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+                iXperience - Cape Town, South Africa
+              </h3>
+              <p class="mb-3 text-lg font-medium text-orange-600">
+                Head Instructor
+              </p>
+              <p class="text-base leading-relaxed text-gray-700">
+                During the three month-long cohorts of the iXperience South
+                Africa summer program, I created I created fully custom
+                curriculum covering multiple web technologies, led two teaching
+                assistants, and directed intensive classroom instruction for US
+                Ivy League and South African scholarship students.
+              </p>
             </div>
-            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-              iXperience - Cape Town, South Africa
-            </h3>
-            <p class="mb-3 text-lg font-medium text-orange-600">
-              Head Instructor
-            </p>
-            <p class="text-base leading-relaxed text-gray-700">
-              During the three month-long cohorts of the iXperience South Africa
-              summer program, I created I created fully custom curriculum
-              covering multiple web technologies, led two teaching assistants,
-              and directed intensive classroom instruction for US Ivy League and
-              South African scholarship students.
-            </p>
-          </div>
 
-          <!-- National Tax Services -->
-          <div class="rounded-lg border-2 border-orange-200 bg-white p-8">
-            <img
-              src="/images/tax-company.webp"
-              alt="National Tax Services Company"
-              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-            />
-            <span
-              class="mb-4 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
-              >Strategy</span
-            >
-            <h3 class="mb-3 text-2xl font-bold text-gray-900 md:text-3xl">
-              National Tax Services Company
-            </h3>
-            <p class="mb-4 text-lg font-medium text-orange-600">
-              Strategic Consulting
-            </p>
-            <p class="text-base leading-relaxed text-gray-700">
-              As a consultant, I worked with the president and C-suite to create
-              strategic vision and documentation for technology expansion into
-              new business pillars. This included building presentations
-              explaining complex technical use cases and multi-year budgets to
-              non-technical executives, designing, guiding, and implementing a
-              data lake with ETL processes for decades of historical data,
-              helping craft job descriptions and hire a full-time data engineer,
-              and building preliminary ad-hoc reports to support high-stakes
-              strategic decision-making.
-            </p>
-          </div>
-
-          <!-- Camp Grounded -->
-          <div class="rounded-lg border-2 border-orange-200 bg-white p-8">
-            <img
-              src="/images/camp-grounded.webp"
-              alt="Camp Grounded"
-              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-            />
-
+            <!-- National Tax Services -->
             <div
-              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
             >
-              Events
+              <img
+                src="/images/tax-company.webp"
+                alt="National Tax Services Company"
+                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+              />
+              <span
+                class="mb-4 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+                >Strategy</span
+              >
+              <h3 class="mb-3 text-2xl font-bold text-gray-900 md:text-3xl">
+                National Tax Services Company
+              </h3>
+              <p class="mb-4 text-lg font-medium text-orange-600">
+                Strategic Consulting
+              </p>
+              <p class="text-base leading-relaxed text-gray-700">
+                As a consultant, I worked with the president and C-suite to
+                create strategic vision and documentation for technology
+                expansion into new business pillars. This included building
+                presentations explaining complex technical use cases and
+                multi-year budgets to non-technical executives, designing,
+                guiding, and implementing a data lake with ETL processes for
+                decades of historical data, helping craft job descriptions and
+                hire a full-time data engineer, and building preliminary ad-hoc
+                reports to support high-stakes strategic decision-making.
+              </p>
             </div>
-            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-              Camp Grounded—Summer Camp For Grownups
-            </h3>
-            <p class="mb-3 text-lg font-medium text-orange-600">
-              Core Staff/On-Site Facilitator
-            </p>
-            <p class="text-base leading-relaxed text-gray-700">
-              Camp Grounded was a multi-weekend "summer camp for grownups" in
-              the woods where adults reconnected with play, authenticity, and
-              each other. I was part of the core staff creating that magic,
-              operating wherever I was needed, from setting up, welcoming
-              campers with improv games to serving as a "bedazzler" sparking
-              connection to orchestrating romance as the "Camp Crush
-              Coordinator", tearing it all back down, and so much more.
-            </p>
-          </div>
-        </div>
 
-        <div class="mt-12 text-center">
-          <a href="#connect" class="btn-primary btn-lg">
-            See how I can help →
-          </a>
+            <!-- Camp Grounded -->
+            <div
+              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
+            >
+              <img
+                src="/images/camp-grounded.webp"
+                alt="Camp Grounded"
+                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+              />
+
+              <div
+                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              >
+                Events
+              </div>
+              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+                Camp Grounded—Summer Camp For Grownups
+              </h3>
+              <p class="mb-3 text-lg font-medium text-orange-600">
+                Core Staff/On-Site Facilitator
+              </p>
+              <p class="text-base leading-relaxed text-gray-700">
+                Camp Grounded was a multi-weekend "summer camp for grownups" in
+                the woods where adults reconnected with play, authenticity, and
+                each other. I was part of the core staff creating that magic,
+                operating wherever I was needed, from setting up, welcoming
+                campers with improv games to serving as a "bedazzler" sparking
+                connection to orchestrating romance as the "Camp Crush
+                Coordinator", tearing it all back down, and so much more.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center">
+            <a href="#connect" class="btn-primary btn-lg">
+              See how I can help →
+            </a>
+          </div>
         </div>
       </section>
 
