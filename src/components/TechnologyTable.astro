@@ -9,58 +9,29 @@ const proficiencyColors = {
 };
 ---
 
-<table
-  class="w-full border-collapse border border-gray-300 bg-white text-sm"
-  data-sort="table"
->
-  <thead>
-    <tr class="border-b border-gray-300 bg-gray-300">
-      <th class="p-3 text-left font-semibold">Technology</th>
-      <th class="p-3 text-left font-semibold">Experience</th>
-      <th class="p-3 text-left font-semibold">Last Used</th>
-      <th class="p-3 text-left font-semibold">Proficiency</th>
-    </tr>
-  </thead>
-
+<div>
   {
     technologies.map((section) => (
-      <>
-        <tbody>
-          <tr class="bg-gray-200">
-            <td
-              colspan="4"
-              class="p-3 font-serif text-lg font-semibold text-gray-700"
-            >
-              {section.category}
-            </td>
-          </tr>
-        </tbody>
+      <div>
+        <h3 class="border-r border-l border-gray-300 bg-gray-200 p-3 font-serif text-lg font-semibold text-gray-700">
+          {section.category}
+        </h3>
 
-        <tbody>
+        <div class="divide-y divide-gray-200 border border-gray-300 bg-white text-sm">
           {section.items.map((tech, index) => (
-            <tr
+            <div
               class:list={[
-                "border-b border-gray-200",
+                "grid grid-cols-2 items-center border-b border-gray-200 md:grid-cols-4",
                 index % 2 === 1 && "bg-gray-50",
               ]}
             >
-              <td class="p-3 font-semibold">{tech.name}</td>
-              <td class="p-3" data-sort={tech.experience}>
-                {tech.experience < 1
-                  ? `${tech.experience * 12} months`
-                  : `${tech.experience} years`}
-              </td>
-              <td class="p-3">
-                {tech.lastUsed === "Current" ? (
-                  <span class="inline-flex items-center gap-1">
-                    <span class="h-2 w-2 rounded-full bg-green-500" />
-                    Current
-                  </span>
-                ) : (
-                  tech.lastUsed
-                )}
-              </td>
-              <td class="p-3">
+              {/* Tech */}
+              <div class="px-3 pt-3 pb-1 font-semibold md:order-1 md:pb-3">
+                {tech.name}
+              </div>
+
+              {/* Proficiency */}
+              <div class="px-3 pt-3 pb-1 text-center md:order-4 md:pb-3">
                 <span
                   class:list={[
                     "inline-block rounded-full px-3 py-1 text-sm font-semibold",
@@ -69,11 +40,33 @@ const proficiencyColors = {
                 >
                   {tech.proficiency}
                 </span>
-              </td>
-            </tr>
+              </div>
+
+              {/* Years */}
+              <div
+                class="px-3 pt-1 pb-3 md:order-2 md:pt-3 md:text-center"
+                data-sort={tech.experience}
+              >
+                {tech.experience < 1
+                  ? `${tech.experience * 12} months`
+                  : `${tech.experience} years`}
+              </div>
+
+              {/* Last used */}
+              <div class="px-3 pt-1 pb-3 text-center md:order-3 md:pt-3">
+                {tech.lastUsed === "Current" ? (
+                  <span class="inline-flex items-center gap-1">
+                    <span class="h-2 w-2 rounded-full bg-green-500" />
+                    Current
+                  </span>
+                ) : (
+                  tech.lastUsed
+                )}
+              </div>
+            </div>
           ))}
-        </tbody>
-      </>
+        </div>
+      </div>
     ))
   }
-</table>
+</div>

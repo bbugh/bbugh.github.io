@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Testimonial from "../components/Testimonial.astro";
 import ContactSection from "../components/ContactSection.astro";
+import LandingSection from "../components/LandingSection.astro";
+import LandingSectionTitle from "../components/LandingSectionTitle.astro";
 ---
 
 <Layout>
@@ -29,17 +31,16 @@ import ContactSection from "../components/ContactSection.astro";
 
     <main>
       <!-- Quick Intro -->
-      <section class="mx-auto max-w-4xl px-0 py-20 md:py-20">
+      <LandingSection>
         <div
-          class="mx-auto max-w-prose border-t border-b border-orange-200 bg-white p-6 sm:rounded-2xl sm:border-2 sm:px-6 md:p-12"
+          class="mx-auto w-fit rounded-lg border-2 border-orange-200 bg-white p-6 sm:px-6 md:p-12"
         >
-          <h2
-            class="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
-          >
+          <LandingSectionTitle class="mb-4">
             Only have a minute?
-          </h2>
+          </LandingSectionTitle>
+
           <div
-            class="space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg"
+            class="max-w-prose space-y-4 text-base leading-relaxed text-gray-700 sm:text-lg"
           >
             <p>
               Hi! 👋 I'm Brian, and I've been a tech entrepreneur and operator
@@ -75,117 +76,105 @@ import ContactSection from "../components/ContactSection.astro";
               work who need help navigating complexity and uncertainty. If that
               sounds like you, let's connect, even if it's just to chat.
             </p>
-
-            <div class="text-center">
-              <a href="#connect" class="btn-primary btn-lg mt-4 inline-block">
-                Connect with me →
-              </a>
-
-              <a
-                href="/technical-resume"
-                class="btn-secondary btn-lg mt-4 inline-block"
-              >
-                View My Technical Resume →
-              </a>
-            </div>
           </div>
         </div>
-      </section>
+        <div class="mt-8 flex flex-row items-center justify-center gap-4">
+          <a href="#connect" class="btn-primary btn-lg"> Connect with me → </a>
+
+          <a href="/technical-resume" class="btn-secondary btn-lg">
+            View My Technical Resume →
+          </a>
+        </div>
+      </LandingSection>
 
       <!-- We Should Work Together -->
-      <section
-        class="border-y-2 border-orange-200 bg-white py-16 sm:py-24 md:py-32"
+      <LandingSection
+        heading="We should work together if:"
+        class="border-y-2 border-orange-200 bg-white"
       >
-        <div class="mx-auto max-w-5xl px-6">
-          <h2
-            class="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
-          >
-            We should work together if:
-          </h2>
-          <div class="grid gap-6 text-gray-800 sm:text-lg md:grid-cols-2">
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
-              >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                You know you need <span class="highlight">someone</span>, but
-                you don't know who or what
-              </p>
-            </div>
+        <div class="grid gap-6 text-gray-800 sm:text-lg md:grid-cols-2">
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              You know you need <span class="highlight">someone</span>, but you
+              don't know who or what
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              You have pieces of the puzzle, but
+              <span class="highlight"
+                >you need help figuring out how the pieces fit together</span
               >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                You have pieces of the puzzle, but
-                <span class="highlight"
-                  >you need help figuring out how the pieces fit together</span
-                >
-              </p>
-            </div>
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
-              >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                You know <span class="highlight">what</span> needs to happen, but
-                not <span class="highlight">how</span>
-              </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              You know <span class="highlight">what</span> needs to happen, but not
+              <span class="highlight">how</span>
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
-              >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                You have clear strategic goals, but need to
-                <span class="highlight">break down and map your goals</span>
-                into an actionable plan.
-              </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              You have clear strategic goals, but need to
+              <span class="highlight">break down and map your goals</span>
+              into an actionable plan.
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
-              >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                You built a tool that 1000 people love using for free, but
-                <span class="highlight"
-                  >every monetization attempt has flopped</span
-                >, or you're not even sure how to monetize.
-              </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              You built a tool that 1000 people love using for free, but
+              <span class="highlight"
+                >every monetization attempt has flopped</span
+              >, or you're not even sure how to monetize.
+            </p>
+          </div>
 
-            <div class="flex items-start gap-3">
-              <svg
-                class="mt-1 h-6 w-6 shrink-0 text-orange-600"
-                aria-hidden="true"
-              >
-                <use href="#arrow-bullet"></use>
-              </svg>
-              <p>
-                Your nonprofit runs on a Frankenstein stack of 5 Google Sheets,
-                3 Airtable bases, and someone's personal Dropbox account, but
-                <span class="highlight">now you need to scale</span>.
-              </p>
-            </div>
+          <div class="flex items-start gap-3">
+            <svg
+              class="mt-1 h-6 w-6 shrink-0 text-orange-600"
+              aria-hidden="true"
+            >
+              <use href="#arrow-bullet"></use>
+            </svg>
+            <p>
+              Your nonprofit runs on a Frankenstein stack of 5 Google Sheets, 3
+              Airtable bases, and someone's personal Dropbox account, but
+              <span class="highlight">now you need to scale</span>.
+            </p>
           </div>
         </div>
         <div class="mt-12 text-center">
@@ -193,132 +182,125 @@ import ContactSection from "../components/ContactSection.astro";
             Let's work together →
           </a>
         </div>
-      </section>
+      </LandingSection>
 
       <!-- How I Help -->
-      <section class="bg-orange-50 py-16 sm:py-24 md:py-32">
-        <div class="mx-auto max-w-5xl px-3 md:px-6">
-          <h2
-            class="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl"
-          >
-            How I Help
-          </h2>
-          <p class="mb-8 text-gray-700 sm:text-lg">
-            I work on flexible timelines based on your needs: short-term
-            contracts for urgent work, 3-6 month project engagements, or ongoing
-            advisory relationships. Rates vary by scope, timeline, and
-            organizational impact.
-          </p>
-          <div class="grid gap-6 md:grid-cols-2">
-            <!-- Strategic Consulting -->
-            <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
-              <h3 class="mb-3 text-2xl font-bold text-gray-900">
-                Strategic Consulting
-              </h3>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical engagement: Weeks to months
-              </p>
-              <p class="mb-4 text-base leading-relaxed text-gray-700">
-                I guide executive teams through ambiguous situations, translate
-                technical possibilities into business strategy, and create
-                actionable roadmaps from high-level goals.
-              </p>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical deliverables
-              </p>
-              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
-                <li>Strategic roadmaps and vision documents</li>
-                <li>Technical feasibility assessments</li>
-                <li>Executive presentations and board materials</li>
-                <li>Technology due diligence</li>
-              </ul>
-            </div>
-
-            <!-- Technical Strategy & Architecture -->
-            <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
-              <h3 class="mb-3 text-2xl font-bold text-gray-900">
-                Technical Strategy & Architecture
-              </h3>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical engagement: Days to months
-              </p>
-              <p class="mb-4 text-base leading-relaxed text-gray-700">
-                I use deep technical expertise for decision-making, to ensure
-                you're executing the right thing in the right way. We will
-                evaluate options, design systems, manage technical teams or
-                contractors, and bridge the gap between technical and business
-                stakeholders.
-              </p>
-
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical deliverables
-              </p>
-              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
-                <li>Technical architecture and system design</li>
-                <li>Technology selection and vendor evaluation</li>
-                <li>Building or managing technical teams</li>
-                <li>Technical project oversight and contractor management</li>
-              </ul>
-            </div>
-
-            <!-- Education & Training -->
-            <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
-              <h3 class="mb-3 text-2xl font-bold text-gray-900">
-                Education & Training
-              </h3>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical engagement: Days to weeks
-              </p>
-              <p class="mb-4 text-base leading-relaxed text-gray-700">
-                We can develop custom curriculum, mentor teams through complex
-                topics, and make technical concepts accessible to any audience.
-              </p>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical deliverables
-              </p>
-              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
-                <li>Custom curriculum and learning materials</li>
-                <li>Workshop design and facilitation</li>
-                <li>Technical mentorship programs</li>
-                <li>Train-the-trainer programs</li>
-              </ul>
-            </div>
-
-            <!-- Facilitation & Events -->
-            <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
-              <h3 class="mb-3 text-2xl font-bold text-gray-900">
-                Facilitation & Events
-              </h3>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical engagement: Hours to Days
-              </p>
-              <p class="mb-4 text-base leading-relaxed text-gray-700">
-                I partner with your event organizers to make gatherings actually
-                work. I help you facilitate breakthrough conversations, guide
-                strategic sessions, and serve as an on-site force multiplier who
-                ensures the right work gets done.
-              </p>
-              <p class="mb-2 text-sm font-semibold text-orange-600">
-                Typical deliverables
-              </p>
-              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
-                <li>Retreat and offsite facilitation</li>
-                <li>Strategic planning session leadership</li>
-                <li>On-site event support and hosting</li>
-                <li>Advising organizers on gathering design</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mt-8 text-center">
-            <p class="mb-4 text-lg font-semibold text-gray-700">
-              Not sure which fits? Have something else in mind?
+      <LandingSection heading="How I Help" class="bg-orange-50">
+        <p slot="subtitle">
+          I work on flexible timelines based on your needs: short-term contracts
+          for urgent work, 3-6 month project engagements, or ongoing advisory
+          relationships. Rates vary by scope, timeline, and organizational
+          impact.
+        </p>
+        <div class="grid gap-6 md:grid-cols-2">
+          <!-- Strategic Consulting -->
+          <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
+            <h3 class="mb-3 text-2xl font-bold text-gray-900">
+              Strategic Consulting
+            </h3>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical engagement: Weeks to months
             </p>
-            <a href="#connect" class="btn-primary btn-lg inline-block">
-              Let's figure it out together →
-            </a>
+            <p class="mb-4 text-base leading-relaxed text-gray-700">
+              I guide executive teams through ambiguous situations, translate
+              technical possibilities into business strategy, and create
+              actionable roadmaps from high-level goals.
+            </p>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical deliverables
+            </p>
+            <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
+              <li>Strategic roadmaps and vision documents</li>
+              <li>Technical feasibility assessments</li>
+              <li>Executive presentations and board materials</li>
+              <li>Technology due diligence</li>
+            </ul>
+          </div>
+
+          <!-- Technical Strategy & Architecture -->
+          <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
+            <h3 class="mb-3 text-2xl font-bold text-gray-900">
+              Technical Strategy & Architecture
+            </h3>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical engagement: Days to months
+            </p>
+            <p class="mb-4 text-base leading-relaxed text-gray-700">
+              I use deep technical expertise for decision-making, to ensure
+              you're executing the right thing in the right way. We will
+              evaluate options, design systems, manage technical teams or
+              contractors, and bridge the gap between technical and business
+              stakeholders.
+            </p>
+
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical deliverables
+            </p>
+            <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
+              <li>Technical architecture and system design</li>
+              <li>Technology selection and vendor evaluation</li>
+              <li>Building or managing technical teams</li>
+              <li>Technical project oversight and contractor management</li>
+            </ul>
+          </div>
+
+          <!-- Education & Training -->
+          <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
+            <h3 class="mb-3 text-2xl font-bold text-gray-900">
+              Education & Training
+            </h3>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical engagement: Days to weeks
+            </p>
+            <p class="mb-4 text-base leading-relaxed text-gray-700">
+              We can develop custom curriculum, mentor teams through complex
+              topics, and make technical concepts accessible to any audience.
+            </p>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical deliverables
+            </p>
+            <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
+              <li>Custom curriculum and learning materials</li>
+              <li>Workshop design and facilitation</li>
+              <li>Technical mentorship programs</li>
+              <li>Train-the-trainer programs</li>
+            </ul>
+          </div>
+
+          <!-- Facilitation & Events -->
+          <div class="rounded-lg border-2 border-orange-200 bg-white p-6">
+            <h3 class="mb-3 text-2xl font-bold text-gray-900">
+              Facilitation & Events
+            </h3>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical engagement: Hours to Days
+            </p>
+            <p class="mb-4 text-base leading-relaxed text-gray-700">
+              I partner with your event organizers to make gatherings actually
+              work. I help you facilitate breakthrough conversations, guide
+              strategic sessions, and serve as an on-site force multiplier who
+              ensures the right work gets done.
+            </p>
+            <p class="mb-2 text-sm font-semibold text-orange-600">
+              Typical deliverables
+            </p>
+            <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
+              <li>Retreat and offsite facilitation</li>
+              <li>Strategic planning session leadership</li>
+              <li>On-site event support and hosting</li>
+              <li>Advising organizers on gathering design</li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="mt-8 text-center">
+          <p class="mb-4 text-lg font-semibold text-gray-700">
+            Not sure which fits? Have something else in mind?
+          </p>
+          <a href="#connect" class="btn-primary btn-lg inline-block">
+            Let's figure it out together →
+          </a>
+        </div>
+      </LandingSection>
 
       <!-- Testimonial 1 -->
       <Testimonial
@@ -330,150 +312,143 @@ import ContactSection from "../components/ContactSection.astro";
       />
 
       <!-- Career Highlights -->
-      <section class="divider-from-gray-900 py-16 sm:py-24 md:py-32">
-        <div class="mx-auto max-w-5xl px-3 md:px-6">
-          <h2
-            class="mb-4 text-center text-3xl font-bold text-gray-900 sm:text-4xl md:text-6xl"
+      <LandingSection heading="Career Highlights" class="divider-from-gray-900">
+        <p slot="subtitle">
+          I've had a variety of projects over the last 30 years. Here are some
+          that have had the biggest impact or I'm most proud of.
+        </p>
+
+        <div class="grid gap-8 lg:grid-cols-2">
+          <!-- UN NGLS -->
+          <div
+            class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
           >
-            Career Highlights
-          </h2>
-          <p class="mb-8 text-center text-gray-700 sm:text-lg">
-            I've had a variety of projects over the last 30 years. Here are some
-            that have had the biggest impact or I'm most proud of.
-          </p>
+            <img
+              src="/images/un_ngls_2016_summit_on_refugees_migrants.webp"
+              alt="UN NGLS 2016 Summit on Refugees & Migrants"
+              class="mb-6 aspect-3/2 w-full rounded border border-gray-300 object-cover object-right sm:aspect-2/1 lg:aspect-3/2"
+            />
 
-          <div class="grid gap-8 lg:grid-cols-2">
-            <!-- UN NGLS -->
             <div
-              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
+              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
             >
-              <img
-                src="/images/un_ngls_2016_summit_on_refugees_migrants.webp"
-                alt="UN NGLS 2016 Summit on Refugees & Migrants"
-                class="mb-6 aspect-3/2 w-full rounded border border-gray-300 object-cover object-right sm:aspect-2/1 lg:aspect-3/2"
-              />
-
-              <div
-                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
-              >
-                Impact
-              </div>
-              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-                UN NGLS 2016 Summit on Refugees & Migrants
-              </h3>
-              <p class="mb-3 text-lg font-medium text-orange-600">
-                Data Engineering
-              </p>
-              <p class="text-base leading-relaxed text-gray-700">
-                As part of the UN NGLS's data initiative for the UN's 2016
-                Summit on Refugees and Migrants, I managed complex data and
-                created reports accessible to non-technical audiences while
-                protecting at-risk participants.
-              </p>
+              Impact
             </div>
-
-            <!-- iXperience -->
-            <div
-              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
-            >
-              <img
-                src="/images/ixperience-mentoring.webp"
-                alt="iXperience Cape Town"
-                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-              />
-
-              <div
-                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
-              >
-                Education
-              </div>
-              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-                iXperience - Cape Town, South Africa
-              </h3>
-              <p class="mb-3 text-lg font-medium text-orange-600">
-                Head Instructor
-              </p>
-              <p class="text-base leading-relaxed text-gray-700">
-                During the three month-long cohorts of the iXperience South
-                Africa summer program, I created I created fully custom
-                curriculum covering multiple web technologies, led two teaching
-                assistants, and directed intensive classroom instruction for US
-                Ivy League and South African scholarship students.
-              </p>
-            </div>
-
-            <!-- National Tax Services -->
-            <div
-              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
-            >
-              <img
-                src="/images/tax-company.webp"
-                alt="National Tax Services Company"
-                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-              />
-              <span
-                class="mb-4 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
-                >Strategy</span
-              >
-              <h3 class="mb-3 text-2xl font-bold text-gray-900 md:text-3xl">
-                National Tax Services Company
-              </h3>
-              <p class="mb-4 text-lg font-medium text-orange-600">
-                Strategic Consulting
-              </p>
-              <p class="text-base leading-relaxed text-gray-700">
-                As a consultant, I worked with the president and C-suite to
-                create strategic vision and documentation for technology
-                expansion into new business pillars. This included building
-                presentations explaining complex technical use cases and
-                multi-year budgets to non-technical executives, designing,
-                guiding, and implementing a data lake with ETL processes for
-                decades of historical data, helping craft job descriptions and
-                hire a full-time data engineer, and building preliminary ad-hoc
-                reports to support high-stakes strategic decision-making.
-              </p>
-            </div>
-
-            <!-- Camp Grounded -->
-            <div
-              class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
-            >
-              <img
-                src="/images/camp-grounded.webp"
-                alt="Camp Grounded"
-                class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
-              />
-
-              <div
-                class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
-              >
-                Events
-              </div>
-              <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
-                Camp Grounded—Summer Camp For Grownups
-              </h3>
-              <p class="mb-3 text-lg font-medium text-orange-600">
-                Core Staff/On-Site Facilitator
-              </p>
-              <p class="text-base leading-relaxed text-gray-700">
-                Camp Grounded was a multi-weekend "summer camp for grownups" in
-                the woods where adults reconnected with play, authenticity, and
-                each other. I was part of the core staff creating that magic,
-                operating wherever I was needed, from setting up, welcoming
-                campers with improv games to serving as a "bedazzler" sparking
-                connection to orchestrating romance as the "Camp Crush
-                Coordinator", tearing it all back down, and so much more.
-              </p>
-            </div>
+            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+              UN NGLS 2016 Summit on Refugees & Migrants
+            </h3>
+            <p class="mb-3 text-lg font-medium text-orange-600">
+              Data Engineering
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+              As part of the UN NGLS's data initiative for the UN's 2016 Summit
+              on Refugees and Migrants, I managed complex data and created
+              reports accessible to non-technical audiences while protecting
+              at-risk participants.
+            </p>
           </div>
 
-          <div class="mt-12 text-center">
-            <a href="#connect" class="btn-primary btn-lg">
-              See how I can help →
-            </a>
+          <!-- iXperience -->
+          <div
+            class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
+          >
+            <img
+              src="/images/ixperience-mentoring.webp"
+              alt="iXperience Cape Town"
+              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+            />
+
+            <div
+              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+            >
+              Education
+            </div>
+            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+              iXperience - Cape Town, South Africa
+            </h3>
+            <p class="mb-3 text-lg font-medium text-orange-600">
+              Head Instructor
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+              During the three month-long cohorts of the iXperience South Africa
+              summer program, I created I created fully custom curriculum
+              covering multiple web technologies, led two teaching assistants,
+              and directed intensive classroom instruction for US Ivy League and
+              South African scholarship students.
+            </p>
+          </div>
+
+          <!-- National Tax Services -->
+          <div
+            class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
+          >
+            <img
+              src="/images/tax-company.webp"
+              alt="National Tax Services Company"
+              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+            />
+            <span
+              class="mb-4 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+              >Strategy</span
+            >
+            <h3 class="mb-3 text-2xl font-bold text-gray-900 md:text-3xl">
+              National Tax Services Company
+            </h3>
+            <p class="mb-4 text-lg font-medium text-orange-600">
+              Strategic Consulting
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+              As a consultant, I worked with the president and C-suite to create
+              strategic vision and documentation for technology expansion into
+              new business pillars. This included building presentations
+              explaining complex technical use cases and multi-year budgets to
+              non-technical executives, designing, guiding, and implementing a
+              data lake with ETL processes for decades of historical data,
+              helping craft job descriptions and hire a full-time data engineer,
+              and building preliminary ad-hoc reports to support high-stakes
+              strategic decision-making.
+            </p>
+          </div>
+
+          <!-- Camp Grounded -->
+          <div
+            class="rounded-lg border-2 border-orange-200 bg-white p-6 md:p-8"
+          >
+            <img
+              src="/images/camp-grounded.webp"
+              alt="Camp Grounded"
+              class="mb-6 aspect-2/1 w-full rounded border border-gray-300 object-cover object-right lg:aspect-3/2"
+            />
+
+            <div
+              class="mb-2 inline-block rounded bg-orange-600 px-3 py-1 text-sm font-semibold tracking-wide text-white uppercase"
+            >
+              Events
+            </div>
+            <h3 class="mb-1 text-2xl font-bold text-gray-900 md:text-3xl">
+              Camp Grounded—Summer Camp For Grownups
+            </h3>
+            <p class="mb-3 text-lg font-medium text-orange-600">
+              Core Staff/On-Site Facilitator
+            </p>
+            <p class="text-base leading-relaxed text-gray-700">
+              Camp Grounded was a multi-weekend "summer camp for grownups" in
+              the woods where adults reconnected with play, authenticity, and
+              each other. I was part of the core staff creating that magic,
+              operating wherever I was needed, from setting up, welcoming
+              campers with improv games to serving as a "bedazzler" sparking
+              connection to orchestrating romance as the "Camp Crush
+              Coordinator", tearing it all back down, and so much more.
+            </p>
           </div>
         </div>
-      </section>
+
+        <div class="mt-12 text-center">
+          <a href="#connect" class="btn-primary btn-lg">
+            See how I can help →
+          </a>
+        </div>
+      </LandingSection>
 
       <!-- Testimonial 2 -->
       <Testimonial
@@ -485,7 +460,7 @@ import ContactSection from "../components/ContactSection.astro";
       />
 
       <!-- Connect -->
-      <ContactSection />
+      <ContactSection class="divider-from-gray-900" />
     </main>
 
     <!-- Footer -->

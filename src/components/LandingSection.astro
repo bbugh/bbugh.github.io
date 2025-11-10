@@ -1,0 +1,32 @@
+---
+import LandingSectionTitle from "./LandingSectionTitle.astro";
+
+interface Props {
+  heading?: string;
+  id?: string;
+  class?: string;
+}
+
+const { heading, class: customClass, id } = Astro.props;
+const hasSubtitle = Astro.slots.has("subtitle");
+---
+
+<section id={id} class:list={["py-16 sm:py-24 md:py-32", customClass]}>
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    {
+      heading && (
+        <LandingSectionTitle class={hasSubtitle ? "mb-4" : "mb-8"}>
+          {heading}
+        </LandingSectionTitle>
+      )
+    }
+    {
+      hasSubtitle && (
+        <div class="mb-8 text-gray-700 sm:text-lg">
+          <slot name="subtitle" />
+        </div>
+      )
+    }
+    <slot />
+  </div>
+</section>
