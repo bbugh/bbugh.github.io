@@ -5,4 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   outDir: "./_site",
   vite: { plugins: [tailwindcss()] },
+  site: 'https://brianbugh.me'
 });

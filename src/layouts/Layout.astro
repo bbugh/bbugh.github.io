@@ -6,12 +6,17 @@ import NavBar from "../components/NavBar.astro";
 interface Props {
   title?: string;
   metaDescription?: string;
+  ogImage?: string;
 }
 
 const {
   title = "Brian Bugh - Technical Strategist | Educator | Catalyst",
   metaDescription = "Brian Bugh - Technical Strategist, Educator, and Catalyst helping organizations solve complex problems",
+  ogImage = "/images/hero-ix-horizontal.webp",
 } = Astro.props;
+
+const fullUrl = new URL(Astro.url.pathname, Astro.site).href;
+const fullImageUrl = new URL(ogImage, Astro.site).href;
 ---
 
 <!doctype html>
@@ -20,6 +25,15 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={metaDescription} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:url" content={fullUrl} />
+    <meta property="og:type" content="website" />
+
+    <link rel="canonical" href={fullUrl} />
+
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
