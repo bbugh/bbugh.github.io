@@ -1,13 +1,16 @@
 ---
 interface Props {
   title: string;
+  class?: string;
 }
-
-const { title } = Astro.props;
+const { title, class: className } = Astro.props;
 ---
 
 <section
-  class="mx-auto flex w-fit flex-col gap-8 divide-gray-300 px-8 py-16 md:flex-row md:gap-0 md:divide-x md:py-12 lg:px-0"
+  class:list={[
+    "mx-auto flex w-fit flex-col gap-8 divide-gray-300 px-8 py-16 md:flex-row md:gap-0 md:divide-x md:py-12 lg:px-0",
+    className,
+  ]}
 >
   <div
     class="w-full shrink-0 border-b border-gray-400 md:w-48 md:border-b-0 md:pr-6"
