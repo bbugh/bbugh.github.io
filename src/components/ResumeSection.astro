@@ -9,15 +9,21 @@ const { title, class: className } = Astro.props;
 <section
   class:list={[
     "mx-auto flex w-fit flex-col gap-8 divide-gray-300 px-8 py-16 md:flex-row md:gap-0 md:divide-x md:py-12 lg:px-0",
+    "print:mx-0 print:block print:w-full print:flex-row print:gap-4 print:border-0 print:py-4",
     className,
   ]}
 >
   <div
-    class="w-full shrink-0 border-b border-gray-400 md:w-48 md:border-b-0 md:pr-6"
+    class:list={[
+      "w-full shrink-0 border-b border-gray-400 md:w-48 md:border-b-0 md:pr-6",
+      "print:mb-2 print:w-full print:border-0 print:pr-0",
+    ]}
   >
-    <h2 class="text-4xl font-bold md:text-2xl lg:text-3xl">{title}</h2>
+    <h2 class="text-4xl font-bold md:text-2xl lg:text-3xl print:text-2xl">
+      {title}
+    </h2>
   </div>
-  <div class="flex-1 space-y-8 md:max-w-prose md:pl-6">
+  <div class="flex-1 space-y-8 md:max-w-prose md:pl-6 print:space-y-4">
     <slot />
   </div>
 </section>

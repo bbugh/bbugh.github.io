@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<div class="space-y-2 print:break-inside-avoid">
+  <h3 class="font-serif text-xl font-semibold capitalize" set:html={title} />
+  <p class="leading-6" set:html={description} />
+  {
+    Astro.slots.has("default") && (
+      <ul class="list-disc space-y-1 pl-6">
+        <slot />
+      </ul>
+    )
+  }
+</div>

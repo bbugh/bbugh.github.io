@@ -16,14 +16,26 @@ const skills = [
 ];
 ---
 
-<ul class="mb-6 flex flex-wrap gap-3">
+<ul class:list={[
+  "mb-6 flex flex-wrap gap-3",
+  "print:grid print:grid-cols-5 print:gap-1 print:mb-2"
+]}>
   {
     skills.map((skill) => (
-      <li class="flex w-full items-center gap-2 rounded border-2 border-gray-200 bg-gray-50 px-6 py-4 md:w-auto md:flex-1">
-        <svg class="h-8 w-8 shrink-0">
-          <use href={`#icon-${skill.icon}`} />
+      <li class:list={[
+        "flex w-full items-center gap-2 rounded border-2 border-gray-200 bg-gray-50 px-6 py-4 md:w-auto md:flex-1",
+        "print:border-0 print:bg-transparent print:px-1 print:py-0.5 print:text-sm"
+      ]}>
+        <svg class:list={[
+          "h-8 w-8 shrink-0",
+          "print:h-4 print:w-4"
+        ]}>
+          <use href=`#icon-${skill.icon}`} />
         </svg>
-        <span class="text-xl font-semibold text-gray-800">{skill.name}</span>
+        <span class:list={[
+          "text-xl font-semibold text-gray-800",
+          "print:text-xs print:font-normal"
+        ]}>{skill.name}</span>
       </li>
     ))
   }
