@@ -11,8 +11,11 @@ const navClass = (path: string) =>
 ---
 
 <nav
-  class="flex flex-row items-center justify-center bg-neutral-800 px-8 py-5 text-white sm:text-lg md:justify-end"
+  class="flex flex-col items-center justify-between bg-neutral-800 px-8 py-5 text-white sm:text-lg md:flex-row"
 >
+  <a href="/" class="mx-auto font-serif text-2xl font-bold md:mr-8 md:ml-0"
+    >Brian Bugh</a
+  >
   <div class="flex flex-row justify-center gap-6 md:justify-end">
     <a href="/" class={navClass("/")}>About Me</a>
     <a href="/technical-resume" class={navClass("/technical-resume")}>
