@@ -10,20 +10,13 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <div
-    class:list={["flex flex-col border-t border-gray-300", "print:border-0"]}
-  >
+  <div class="flex flex-col border-t border-gray-300">
     <TechnologyIcons />
 
     <!-- Hero -->
-    <header
-      class:list={[
-        "mx-auto mb-4 max-w-4xl px-8 pt-8 pb-4",
-        "print:mb-0 print:py-2",
-      ]}
-    >
-      <h1 class="font-serif text-6xl font-medium print:text-4xl">Brian Bugh</h1>
-      <h2 class="mt-2 font-serif text-2xl print:mt-1 print:text-xl">
+    <header class="mx-auto mb-4 max-w-4xl px-8 pt-8 pb-4">
+      <h1 class="font-serif text-6xl font-medium">Brian Bugh</h1>
+      <h2 class="mt-2 font-serif text-2xl">
         Generalist Systems Engineer & Technical Leadership
       </h2>
       <p class="mt-4">
@@ -44,12 +37,7 @@ import Footer from "../components/Footer.astro";
       </p>
     </header>
 
-    <main
-      class:list={[
-        "divide-y divide-gray-300 border-t border-gray-300",
-        "print:divide-y-0 print:border-0",
-      ]}
-    >
+    <main class="divide-y divide-gray-300 border-t border-gray-300">
       <ResumeSection title="About Me">
         <div class="space-y-1">
           <h3 class="font-serif text-xl font-bold">
@@ -144,10 +132,7 @@ import Footer from "../components/Footer.astro";
       </ResumeSection>
 
       <h2
-        class:list={[
-          "mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900",
-          "print:hidden",
-        ]}
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
       >
         Technology
       </h2>
@@ -156,10 +141,7 @@ import Footer from "../components/Footer.astro";
         <TechnologyMiniCards />
 
         <details
-          class:list={[
-            "block cursor-pointer border-2 border-gray-200 bg-gray-100 p-4",
-            "print:hidden",
-          ]}
+          class="block cursor-pointer border-2 border-gray-200 bg-gray-100 p-4"
         >
           <summary>Click to show more</summary>
 
@@ -171,9 +153,6 @@ import Footer from "../components/Footer.astro";
             <TechnologyTable />
           </div>
         </details>
-        <div class="hidden print:block">
-          <TechnologyTable />
-        </div>
       </ResumeSection>
 
       <ResumeSection title="Technical Highlights" class="border-b-0">
@@ -239,21 +218,6 @@ import Footer from "../components/Footer.astro";
           <li>Allowed artists to maximize creativity while system handled performance</li>
         </ResumeHighlightCard>
       </ResumeSection>
-
-      <!-- <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
-      >
-        Personal Attributes
-      </h2> -->
-
-      <!-- <h2
-        class:list={[
-          "mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900",
-          "print:m-0 print:mb-6 print:border-0 print:bg-transparent print:px-16 print:py-0 print:text-left print:text-3xl",
-        ]}
-      >
-        Personal Attributes
-      </h2> -->
 
       <ResumeSection title="Strengths">
         <ul class="list-outside list-disc space-y-2 pl-4">
@@ -355,7 +319,7 @@ import Footer from "../components/Footer.astro";
           quote="I had the pleasure of working on a team led by Brian at Pi Studios. Brian displayed a great aptitude both for solving complex technical problems and explaining relevant details of his solutions in a clear and concise manner. Brian kept the project on track without making his team members feel micromanaged, fostering creativity and encouraging everyone to provide input for important decisions. Furthermore, Brian took any available opportunity to help members of his team learn new skills that they could apply to the project, and I found his guidance invaluable on many occasions. Regardless of the situation, Brian was always open, approachable, and eager to do whatever he could to ensure the completion of tasks, making it easy to hash out development issues whenever the need arose. Working with Brian was a very rewarding experience and I would be happy to have the opportunity to do so again."
           name="John Broadway"
         />
-        <div class:list={["text-center", "print:hidden"]}>
+        <div class="text-center">
           <a
             class="btn btn-secondary mb-6 inline-block"
             href="https://www.linkedin.com/in/brianbugh/details/recommendations/"

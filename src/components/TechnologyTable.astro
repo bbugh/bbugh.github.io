@@ -12,52 +12,34 @@ const proficiencyColors = {
 <div>
   {
     technologies.map((section) => (
-      <div class="print:break-inside-avoid">
+      <div>
         <h3
-          class:list={[
-            "border-r border-l border-gray-300 bg-gray-200 p-3 font-serif text-lg font-semibold text-gray-700",
-            "print:mt-6 print:border-0 print:p-0",
-          ]}
+          class="border-r border-l border-gray-300 bg-gray-200 p-3 font-serif text-lg font-semibold text-gray-700"
         >
           {section.category}
         </h3>
 
         <div
-          class:list={[
-            "divide-y divide-gray-200 border border-gray-300 bg-white text-sm",
-            "print:border-r-0 print:border-b-0 print:border-l-0",
-          ]}
+          class="divide-y divide-gray-200 border border-gray-300 bg-white text-sm"
         >
           {section.items.map((tech, index) => (
             <div
               class:list={[
                 "grid grid-cols-2 items-center border-b border-gray-200 md:grid-cols-4",
-                "print:grid-cols-4 print:items-center print:border-0",
                 index % 2 === 1 && "bg-gray-50",
               ]}
             >
               {/* Tech */}
-              <div
-                class:list={[
-                  "px-3 pt-3 pb-1 font-semibold md:order-1 md:pb-3",
-                  "print:px-2 print:py-1",
-                ]}
-              >
+              <div class="px-3 pt-3 pb-1 font-semibold md:order-1 md:pb-3">
                 {tech.name}
               </div>
 
               {/* Proficiency */}
-              <div
-                class:list={[
-                  "px-3 pt-3 pb-1 text-center md:order-4 md:pb-3",
-                  "print:px-2 print:py-1",
-                ]}
-              >
+              <div class="px-3 pt-3 pb-1 text-center md:order-4 md:pb-3">
                 <span
                   class:list={[
                     "inline-block rounded-full px-3 py-1 text-sm font-semibold",
                     proficiencyColors[tech.proficiency],
-                    "print:bg-transparent print:text-black",
                   ]}
                 >
                   {tech.proficiency}
@@ -66,10 +48,7 @@ const proficiencyColors = {
 
               {/* Years */}
               <div
-                class:list={[
-                  "px-3 pt-1 pb-3 md:order-2 md:pt-3 md:text-center",
-                  "print:px-2 print:py-1",
-                ]}
+                class="px-3 pt-1 pb-3 md:order-2 md:pt-3 md:text-center"
                 data-sort={tech.experience}
               >
                 {tech.experience < 1
@@ -78,12 +57,7 @@ const proficiencyColors = {
               </div>
 
               {/* Last used */}
-              <div
-                class:list={[
-                  "px-3 pt-1 pb-3 text-center md:order-3 md:pt-3",
-                  "print:px-2 print:py-1",
-                ]}
-              >
+              <div class="px-3 pt-1 pb-3 text-center md:order-3 md:pt-3">
                 {tech.lastUsed === "Current" ? (
                   <span class="inline-flex items-center gap-1">
                     <span class="h-2 w-2 rounded-full bg-green-500" />

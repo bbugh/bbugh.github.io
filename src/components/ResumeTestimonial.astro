@@ -9,24 +9,16 @@ const { image, quote, name } = Astro.props;
 ---
 
 <div
-  class:list={[
-    "mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row",
-    "print:max-w-full print:flex-row print:gap-2 print:border-0 print:bg-transparent print:p-0 print:text-sm",
-  ]}
+  class="mx-auto flex max-w-3xl flex-col gap-6 rounded border border-gray-200 bg-gray-100 p-6 md:flex-row"
 >
-  <div class:list={["relative h-24 w-24 shrink-0", "print:hidden"]}>
+  <div class="relative h-24 w-24 shrink-0">
     <img src={image} class="h-full w-full rounded-full object-cover" />
   </div>
-  <div class="flex flex-col gap-1 print:break-inside-avoid">
-    <p class:list={["leading-6", "print:order-2 print:leading-normal"]}>
+  <div class="flex flex-col gap-1">
+    <p class="leading-6">
       &ldquo;{quote}&rdquo;
     </p>
-    <div
-      class:list={[
-        "mt-1 text-right font-bold",
-        "print:order-1 print:m-0 print:text-left print:text-lg",
-      ]}
-    >
+    <div class="mt-1 text-right font-bold">
       {name}
     </div>
   </div>
