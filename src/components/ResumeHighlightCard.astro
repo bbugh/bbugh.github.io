@@ -2,13 +2,16 @@
 interface Props {
   title: string;
   description: string;
+  years: number;
 }
 
-const { title, description } = Astro.props;
+const { title, description, years } = Astro.props;
 ---
 
 <div class="space-y-2 print:break-inside-avoid">
-  <h3 class="font-serif text-xl font-semibold capitalize" set:html={title} />
+  <h3 class="font-serif text-xl font-semibold capitalize">
+    <span set:html={title} />{years && <span class="font-normal"> ({years} years)</span>}
+  </h3>
   <p class="leading-6" set:html={description} />
   {
     Astro.slots.has("default") && (
