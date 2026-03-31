@@ -6,6 +6,7 @@ import ResumeTestimonial from "../components/ResumeTestimonial.astro";
 import TechnologyIcons from "../components/TechnologyIcons.astro";
 import TechnologyMiniCards from "../components/TechnologyMiniCards.astro";
 import ResumeHighlightCard from "../components/ResumeHighlightCard.astro";
+import ResumeSectionHeader from "../components/ResumeSectionHeader.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -111,11 +112,7 @@ import Footer from "../components/Footer.astro";
         </ResumeHighlightCard>
       </ResumeSection>
 
-      <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-8 text-center font-serif text-3xl font-bold text-gray-900"
-      >
-        Technology
-      </h2>
+      <ResumeSectionHeader title="Technology" />
 
       <ResumeSection title="Tools & Frameworks">
         <TechnologyMiniCards />
@@ -167,11 +164,7 @@ import Footer from "../components/Footer.astro";
         />
       </ResumeSection>
 
-      <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-8 text-center font-serif text-3xl font-bold text-gray-900"
-      >
-        Personal Attributes
-      </h2>
+      <ResumeSectionHeader title="Personal Attributes" />
 
       <ResumeSection title="Strengths">
         <ul class="list-outside list-disc space-y-2 pl-4">
@@ -225,7 +218,7 @@ import Footer from "../components/Footer.astro";
         </ul>
       </ResumeSection>
 
-      <ResumeSection title="Weaknesses">
+      <ResumeSection title="Weaknesses" class="border-b-0">
         <ul class="list-outside list-disc space-y-2 pl-4">
           <li>
             Technical strategy and team leadership are where I shine; tracking
@@ -244,29 +237,32 @@ import Footer from "../components/Footer.astro";
             separate, and I have to stop myself from chasing all of them.
           </li>
           <li>
-            I'll never write a custom game physics solver from scratch. 
-            Thankfully, the last decade of engine development means I'll 
+            I'll never write a custom game physics solver from scratch.
+            Thankfully, the last decade of engine development means I'll
             probably never need to.
           </li>
         </ul>
       </ResumeSection>
-      <ResumeSection title="Testimonials">
+
+      <ResumeSectionHeader title="Testimonials" />
+
+      <div class="flex flex-col gap-8">
         <ResumeTestimonial
-          image="/images/photo-josh.jpg"
-          quote="I could always count on Brian to do what was necessary to get the job done. He also has a very forward thinking approach and was able to predict and avoid many pitfalls."
-          name="Josh Heenan"
+          image="/images/suzi-sosa-face.webp"
+          quote="Brian partnered with me in the first year of my turnaround of PaulHood. My goal was to transition the business from a classic tax and accounting firm into a tech-enabled financial services firm. Brian partnered with me to develop the technology strategy as a core component of the business strategy, including mapping the existing strengths and challenges of technology and building a brand new data strategy. He has the unique ability to 'go up and down the ladder' from tactics to strategy on a regular basis. Brian is a rare early- and growth-stage tech leader whose expertise spans across many disciplines and who brings powerful strategic and creative thinking. He is especially valuable in moments of rapid change, whether starting from scratch, managing rapid growth, or going through a turnaround. He's an exceptional people leader and communicator."
+          name="Suzi Sosa"
         />
 
         <ResumeTestimonial
-          image="/images/photo-daniel.jpg"
-          quote="It's not only a personal pleasure to work with Brian, but he's also a superb software engineer and natural team leader. Brian is able to very effectively look ahead and foresee development issues long before they were apparent and would always lead the charge from the front. Brian has an excellent work ethic and invests himself in his work like few others I've known. For this reason I consider Brian to be one of the best team leaders I've worked with and I look forward to working with Brian again. He comes with my absolute highest recommendations."
-          name="Daniel Casslassy"
+          image="/images/mark-boughton-face.webp"
+          quote="Brian has provided really helpful strategic guidance through our sessions, supporting me in navigating ambiguity, confusion, uncertainty, and volatility in my professional life. He brings a rare blend of deep consulting wisdom, psychological insight, and practical business strategy that creates real clarity and momentum, which transformed how I approach my career and leadership challenges."
+          name="Mark Boughton"
         />
 
         <ResumeTestimonial
-          image="/images/photo-john.jpg"
-          quote="I had the pleasure of working on a team led by Brian at Pi Studios. Brian displayed a great aptitude both for solving complex technical problems and explaining relevant details of his solutions in a clear and concise manner. Brian kept the project on track without making his team members feel micromanaged, fostering creativity and encouraging everyone to provide input for important decisions. Furthermore, Brian took any available opportunity to help members of his team learn new skills that they could apply to the project, and I found his guidance invaluable on many occasions. Regardless of the situation, Brian was always open, approachable, and eager to do whatever he could to ensure the completion of tasks, making it easy to hash out development issues whenever the need arose. Working with Brian was a very rewarding experience and I would be happy to have the opportunity to do so again."
-          name="John Broadway"
+          image="/images/sean-patrick-face.webp"
+          quote="Brian has a rare ability to expand out to the big vision and also focus on the smallest details. When I bring him an idea of any size, he shares all the ways to view it, points out the benefits and drawbacks, and asks the questions that help clarify what I'm really trying to accomplish, sometimes showing that the solution I brought isn't actually the problem I'm trying to solve. He has been there from the very early days, even before the business was really a thing, staying committed through hard times and problems, and continues to support both the vision and me personally. His wide skill set across business, software, and relationships makes him someone you can truly build with. That kind of clarity, loyalty, and thoughtfulness is rare."
+          name="Sean Patrick Maher"
         />
         <div class="text-center">
           <a
@@ -276,7 +272,7 @@ import Footer from "../components/Footer.astro";
             See all of my recommendations on LinkedIn
           </a>
         </div>
-      </ResumeSection>
+      </div>
     </main>
 
     <Footer />
