@@ -38,52 +38,32 @@ import Footer from "../components/Footer.astro";
     </header>
 
     <main class="divide-y divide-gray-300 border-t border-gray-300">
-      <ResumeSection title="About Me">
-        <div class="space-y-1">
-          <h3 class="font-serif text-xl font-bold">
-            Generalist System Engineer
-          </h3>
-          <p>
-            <span class="font-bold">
-              I have been a full stack, systems, and embedded software engineer
-              for 30 years.
-            </span>
-            When someone says "what can you do?", the honest answer is "almost anything".
-            I specialize in not specializing: I am an technology generalist who can
-            quickly adapt to new technologies and domains. If I don't know it already,
-            I will learn it quickly. I have worked in industries ranging from healthcare
-            to video games to finance to education.
-          </p>
-        </div>
-        <div class="space-y-1">
-          <h3 class="font-serif text-xl font-bold">Leadership</h3>
-          <p>
-            <span class="font-bold">
-              I've led multiple teams of developers, designers, sales, etc
-            </span>
-            in my role as technical cofounder and/or CTO of multiple startups, as
-            well as leading teams in larger organizations. My leadership style is
-            collaborative and empowering, focused on bringing out the best in each
-            team member, while ensuring we meet our goals effectively and efficiently.
-          </p>
-        </div>
+      <ResumeSection title="Summary">
+        <p>
+          Full-stack and systems engineer with 30 years of experience and 15
+          years of leadership across web development, hardware, data
+          architecture, game engines, DevOps, and product design. Proven
+          technical leader as CTO, cofounder, and early-stage leader of multiple
+          startups, creating teams that deliver with a healthy work-life
+          balance. Business generalist and technology specialist who adapts
+          quickly to new domains.
+        </p>
       </ResumeSection>
 
       <ResumeSection title="Domains of Expertise" class="border-b-0">
         <ResumeHighlightCard
           title="Full-Stack Web Development"
           years={30}
-          description="30 years building everything from early e-commerce platforms to modern web applications. I've worked across the entire stack and can jump into any part of your system."
+          description="Building everything from early e-commerce platforms to modern SSR full stack apps. Frontend to backend, data to display, I can build it, fix it, and lead the team doing it."
         >
           <li><span class="font-semibold">Frontend:</span> HTML, CSS, JavaScript, Vue, React, Tailwind</li>
           <li><span class="font-semibold">Backend:</span> Ruby/Rails, Node.js, PHP, Python, ASP.NET, Elixir/Phoenix</li>
-          <li>I can build it, fix it, or lead the team doing it</li>
         </ResumeHighlightCard>
 
         <ResumeHighlightCard
           title="Data Engineering & Architecture"
           years={26}
-          description="26 years designing databases, data pipelines, and analytics systems. I've built data infrastructure for everything from the UN to enterprise data warehouses combining decades of historical information."
+          description="Designing databases, data pipelines, and analytics systems, for everyone from startups to the UN to enterprise warehouses with decades of history."
         >
           <li>Database design & optimization</li>
           <li>ETL pipelines & data lakes (BigQuery, Snowflake)</li>
@@ -93,7 +73,7 @@ import Footer from "../components/Footer.astro";
         <ResumeHighlightCard
           title="Product Design & UX"
           years={20}
-          description={`I'm a developer who <span class="italic">actually understands</span> users. I've built products people love by combining technical implementation with human-centered design. This combination has been a key success metric for many products.`}
+          description="Deeply understanding what users love, building products people want to use by combining technical implementation with human-centered design."
         >
           <li>User research & product design</li>
           <li>Interface design & prototyping</li>
@@ -103,7 +83,7 @@ import Footer from "../components/Footer.astro";
         <ResumeHighlightCard
           title="Technical Leadership"
           years={15}
-          description="I've led engineering teams and served as CTO for multiple startups. I know how to build teams, set technical direction, and translate between business needs and technical execution."
+          description="CTO and technical strategy, building and mentoring engineering teams, and translating between business and execution."
         >
           <li>CTO & technical strategy</li>
           <li>Team building & mentorship</li>
@@ -113,7 +93,7 @@ import Footer from "../components/Footer.astro";
         <ResumeHighlightCard
           title="Game Engine Development"
           years={6}
-          description="Worked on many AAA games at the system level, including a near-complete Xbox 360 rewrite of Quake 3, the Lua-based quest system in Mercenaries 2, a production ActionScript 2 game engine, and multiple Rock Band titles on multiple platforms. I understand high performance, memory management, algorithms, and multi-platform low-level systems."
+          description="AAA game systems engineer; near-complete Xbox 360 rewrite of Quake 3, Lua-based quest system in Mercenaries 2, a production ActionScript 2 game engine, and multiple Rock Band titles across platforms."
         >
           <li>Engine architecture & design</li>
           <li>C/C++, performance optimization</li>
@@ -123,7 +103,7 @@ import Footer from "../components/Footer.astro";
         <ResumeHighlightCard
           title="DevOps & Infrastructure"
           years={20}
-          description="Set up and maintain the systems that keep applications running. From Linux servers to Docker containers to cloud deployments, I can build and manage infrastructure (though you'll want a focused system administrator to handle day-to-day ops)."
+          description="Deploying and maintaining applications, building and managing Linux, docker, and cloud infrastructure, CI/CD, automation, and monitoring."
         >
           <li>Linux system administration</li>
           <li>Docker, CI/CD, deployment automation</li>
@@ -132,7 +112,7 @@ import Footer from "../components/Footer.astro";
       </ResumeSection>
 
       <h2
-        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-12 text-center font-serif text-5xl font-bold text-gray-900"
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-8 text-center font-serif text-3xl font-bold text-gray-900"
       >
         Technology
       </h2>
@@ -155,121 +135,92 @@ import Footer from "../components/Footer.astro";
         </details>
       </ResumeSection>
 
-      <ResumeSection title="Technical Highlights" class="border-b-0">
+      <ResumeSection title="Career Highlights" class="border-b-0">
         <ResumeHighlightCard
           title="Custom Linux Audio / Electron Kiosk System"
-          description="For a client's interactive kiosk system, on a shoestring budget, I created a custom Linux-based OS that booted directly into a secure Electron app kiosk, featuring:"
-        >
-          <li>Surround sound (surprisingly difficult on Linux)</li>
-          <li>Automatic cloud updates</li>
-          <li>Remote device management</li>
-          <li>Advanced audio engine handling multiple overlapping tracks with smooth crossfading and pausing</li>
-        </ResumeHighlightCard>
+          description="Created a custom Linux-based OS that booted directly into a secure Electron kiosk app, on a shoestring budget. Surround sound (surprisingly difficult on Linux), automatic cloud updates, remote device management, and an advanced audio engine handling multiple overlapping tracks with smooth crossfading and pausing."
+        />
 
         <ResumeHighlightCard
-          title="Rewrite of an internal banking administration system"
-          description="A large bank's recently developed internal administration system was buggy, insecure, and very slow. The original contractor team took 6 months to build it (estimated at 1 month). I completely rewrote it from scratch in 2 weeks, delivering:"
-        >
-          <li>Dramatically improved performance</li>
-          <li>No obvious critical security vulnerabilities (SQL injection, client-only validation)</li>
-          <li>Much more intuitive user interface</li>
-          <li>Built in ASP.net with proper architecture</li>
-        </ResumeHighlightCard>
+          title="Rewrite of an Internal Banking Administration System"
+          description="Completely rewrote a large bank's buggy, insecure internal admin system from scratch, in two weeks (original contractor team: 6 months, estimated at 1 month). Dramatically improved performance, eliminated critical security vulnerabilities, more intuitive UI, proper ASP.net architecture."
+        />
 
         <ResumeHighlightCard
-          title="Custom Xbox 360 file packaging system"
-          description="Microsoft's secure file system for signing XBOX packages was slow and not very secure. I created a custom file packaging system that delivered:"
-        >
-          <li>Reduced load times from ~45 seconds to &lt;8 seconds</li>
-          <li>Intelligent file data distribution</li>
-          <li>Hand-tuned custom compression to minimize file size</li>
-          <li>Greatly reduced chance of hacking</li>
-        </ResumeHighlightCard>
+          title="Enterprise Data Architecture"
+          description="Designed and implemented a data lake with ETL processes combining decades of historical data for a national tax services company, working directly with the president and C-suite to expand into new technology-driven business pillars. Built ad-hoc reports to support high-stakes strategic decisions and helped craft job descriptions and hire a full-time data engineer."
+        />
 
         <ResumeHighlightCard
-          title="Multiple Continuous Integration and Automated Testing Tools"
-          description="For multiple projects I created custom automated testing, building, and continuous integration tools that delivered:"
-        >
-          <li>Security auto-attacks (SQL injection, timing overflows, unusual user behaviors)</li>
-          <li>Customizable automated testing procedures scriptable by non-programmers</li>
-          <li>Cross-platform asset packaging and management</li>
-          <li>Worked for both web and games (uncommon at the time)</li>
-        </ResumeHighlightCard>
+          title="Custom Xbox 360 File Packaging System"
+          description="Replaced Microsoft's slow, insecure XBOX file packaging system with a custom-built secure alternative. Load times dropped from ~45 seconds to <8 seconds through intelligent file data distribution and hand-tuned custom compression."
+        />
 
         <ResumeHighlightCard
-          title={`Spec-complete, feature enhanced ActionScript 2 interpreter in <span class="whitespace-nowrap">C++</span>`}
-          description="While working with a AAA-game engine in C++ with a strict no-third-party-libraries policy, I wrote a complete ActionScript 2 interpreter to enable Flash as a UI design environment, with:"
-        >
-          <li>Spec-complete implementation with enhanced features</li>
-          <li>Thread/process-safe asynchronous updates</li>
-          <li>Fully automated spec test suite self-written in ActionScript</li>
-          <li>Extensive game-enhanced <span class="font-mono">UIComponent</span> library for Flash artists</li>
-          <li>Enabled rapid UI creation for current and future titles</li>
-        </ResumeHighlightCard>
+          title="Predictive Asset Loading and Rendering Pipeline"
+          description="Built an advanced asset loading and rendering system for a Facebook Flash game that pushed high-resolution sprites and animation beyond what was previously thought possible, along with a pre-compiler that let artists maximize visual quality while the system handled performance."
+        />
 
         <ResumeHighlightCard
-          title="Predictive Asset Loading and Render Buffering Pipeline in ActionScript 2"
-          description="To make a Facebook game look more impressive than anyone had seen with high-resolution sprites and extensive animation frames, I built an advanced rendering system featuring:"
-        >
-          <li>Asset manager that intelligently predicted texture usage</li>
-          <li>Automatic pre-caching and unloading in partial real-time</li>
-          <li>Custom asset buffering and rendering pipeline optimized for Flash</li>
-          <li>Pre-compiler for automatic optimization</li>
-          <li>Allowed artists to maximize creativity while system handled performance</li>
-        </ResumeHighlightCard>
+          title="Spec-Complete, Enhanced AS2 Interpreter in C++"
+          description="Wrote a complete, spec-compliant ActionScript 2 interpreter in C++ for a AAA game engine that had a strict no-third-party-libraries policy, enabling Flash as a UI design environment. Thread/process-safe async updates, fully automated test suite self-written in ActionScript, and an extensive component library that enabled rapid UI creation across titles."
+        />
       </ResumeSection>
+
+      <h2
+        class="mx-auto mb-6 border-t border-b border-gray-300 bg-gray-100 py-8 text-center font-serif text-3xl font-bold text-gray-900"
+      >
+        Personal Attributes
+      </h2>
 
       <ResumeSection title="Strengths">
         <ul class="list-outside list-disc space-y-2 pl-4">
           <li>
             Predicting failure outcomes and spotting "gap problems", then
-            writing code or guiding the process/team to avoid them. I have a lot
-            of experience in code/process optimization, robustness, and
+            writing code or guiding the team to avoid them.
+          </li>
+          <li>
+            Deep experience in code/process optimization, robustness, and
             security.
           </li>
           <li>
             Data architecture, file systems, resource allocation, optimization,
-            loading, and caching. I absolutely love resources and huge datasets.
+            loading, and caching.
           </li>
           <li>
-            Starting projects and preparing foundational design and architecture
-            for others to come along and build on top of.
+            Laying foundational architecture that teams can confidently build
+            on.
           </li>
           <li>
-            Designing frameworks and tools for empowering programmers (or
-            others) to do better work and/or make their lives easier.
+            Creating frameworks and tools that empower teams to do better work
+            and make their lives easier.
           </li>
           <li>
-            Working with experienced teams: a previous manager noted that I'm
-            excellent at getting 150% out of my teams, without grinding them
-            out. I thrive leading and working on teams with strong technical
-            competence and consistently catalyze good developers to become
-            exceptional. Skilled craftspeople love working with/for me.
+            Product design with deep intuition for human interaction, turning
+            that into software people genuinely love.
           </li>
           <li>
-            Leadership methods that produce optimal steady output from creative
-            teams over long periods of time that doesn't involve crunch hours or
-            dehumanizing practices. Six months into a project my teams work
-            better and happier, not worse and sad from burn out. People love
-            working for me.
+            Investing in the growth of team members and helping good people
+            become exceptional.
           </li>
           <li>
-            A strong work ethic, focused on getting things done because they
-            need doing. I am known for focusing for long periods of time on
-            single tasks without getting fatigued or bored.
+            Leading teams that produce high-quality output consistently over
+            long periods without burnout.
           </li>
           <li>
-            Doing things right the first time, so no one ever has to do them
-            again, while also doing it quickly.
+            Strong work ethic, getting things done because they need doing.
           </li>
           <li>
-            Product design, particularly in human interactions. I can accurately
-            judge how people will feel using software and create/enhance designs
-            to optimize for the human experience.
+            Deep, sustained focus on difficult tasks for long periods without
+            losing energy or attention.
           </li>
           <li>
-            Much to the chagrin of some teams, I am very good at finding bugs
-            and breaking things.
+            Doing things right the first time so no one ever has to do them
+            again.
+          </li>
+          <li>
+            Seeing where systems will fail before they do, then making sure they
+            don't.
           </li>
         </ul>
       </ResumeSection>
@@ -277,27 +228,25 @@ import Footer from "../components/Footer.astro";
       <ResumeSection title="Weaknesses">
         <ul class="list-outside list-disc space-y-2 pl-4">
           <li>
-            2D/3D visual math, particularly geometry. Despite my strong math
-            skills in other areas, I have never clicked with spatial math.
-            Thankfully, this is rarely relevant, and even then most modern
-            engines handle this for us.
+            Technical strategy and team leadership are where I shine; tracking
+            every daily detail of a large project's moving pieces is not. I work
+            exceptionally well when paired with a strong project manager who
+            handles the logistics while I focus on architecture, strategy, and
+            leading the team.
           </li>
           <li>
-            I can organize myself, and I can create great plans for teams, but I
-            am not a project manager and I do not do well keeping track of all
-            minor daily details of the moving pieces of a large project. I work
-            exceptionally well when paired with a strong project manager who can
-            handle the logistics of keeping the day-to-day details straight,
-            while I focus on the technical strategy, architecture, and team
-            leadership.
+            The earlier you bring me in on a project, the more value you get. I
+            can keep things running, but I'm at my best when the foundation is
+            still being figured out.
           </li>
           <li>
-            Getting the best work out of me involves putting me ahead of others
-            on projects doing the foundation, predictive problem-solving, and
-            pioneering work. I can definitely do maintenance work and long-tail
-            end of project bug fixing, but my strongest gifts lie in the
-            pre-planning and early implementation phases of projects where I can
-            scaffold the best path forward for others to follow.
+            I see connections between problems that other people treat as
+            separate, and I have to stop myself from chasing all of them.
+          </li>
+          <li>
+            I'll never write a custom physics solver from scratch. Thankfully,
+            the last decade of engine development means I'll probably never need
+            to.
           </li>
         </ul>
       </ResumeSection>
