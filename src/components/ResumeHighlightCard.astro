@@ -8,14 +8,14 @@ interface Props {
 const { title, description, years } = Astro.props;
 ---
 
-<div class="space-y-2">
-  <h3 class="font-serif text-xl font-semibold capitalize">
+<div>
+  <h3 class="font-serif text-xl font-semibold capitalize mb-1">
     <span set:html={title} />{years && <span class="font-normal"> ({years} years)</span>}
   </h3>
   <p class="leading-6" set:html={description} />
   {
     Astro.slots.has("default") && (
-      <ul class="list-disc space-y-1 pl-6">
+      <ul class="list-disc space-y-1 pl-6 mt-2">
         <slot />
       </ul>
     )
