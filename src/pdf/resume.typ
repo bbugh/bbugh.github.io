@@ -1,7 +1,7 @@
 // Brian Bugh - Technical Resume
 #set document(title: "Brian Bugh - Technical Resume", author: "Brian Bugh")
 #set page(margin: (top: 0.5in, bottom: 0.5in, x: 0.55in), paper: "us-letter")
-#set text(font: "Avenir Next", size: 9pt, fill: rgb("#2d2d2d"))
+#set text(font: "Inter", size: 9pt, fill: rgb("#2d2d2d"))
 // #set par(justify: true, leading: 0.7em, spacing: 1.4em)
 #set par(justify: true, leading: 0.6em, spacing: 1.1em)
 #set list(indent: 0pt, body-indent: 5pt, spacing: 10pt)

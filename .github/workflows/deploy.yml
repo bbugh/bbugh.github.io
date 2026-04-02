@@ -46,6 +46,12 @@ jobs:
       - name: Build site
         run: pnpm build
 
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Build resume PDF
+        run: typst compile --font-path src/pdf/fonts src/pdf/resume.typ _site/resume.pdf
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
