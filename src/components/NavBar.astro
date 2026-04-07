@@ -5,8 +5,8 @@ const isActive = (path: string) =>
   currentPath === path || currentPath === path + "/";
 
 const navClass = (path: string) =>
-  `border-b-4 pb-1 whitespace-nowrap ${
-    isActive(path) ? "font-semibold border-orange-400" : "border-transparent"
+  `border-b-2 pb-1 whitespace-nowrap ${
+    isActive(path) ? "text-orange-400 border-orange-400" : "border-transparent"
   }`;
 ---
 
