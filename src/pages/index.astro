@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Testimonial from "../components/Testimonial.astro";
 import ContactSection from "../components/ContactSection.astro";
+import Footer from "../components/Footer.astro";
 import LandingSection from "../components/LandingSection.astro";
 import LandingSectionTitle from "../components/LandingSectionTitle.astro";
 ---
@@ -463,22 +464,7 @@ import LandingSectionTitle from "../components/LandingSectionTitle.astro";
       <ContactSection class="divider-from-gray-900" />
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-6 text-gray-500">
-      <div class="mx-auto max-w-4xl px-6 text-center text-sm">
-        <p>Brian Bugh &copy; 2025</p>
-        <p>
-          What are the most dangerous kind of canoes?
-          <button
-            type="button"
-            class="cursor-pointer bg-gray-300 text-transparent"
-            onclick="this.classList.toggle('text-transparent'); this.classList.toggle('bg-gray-300')"
-          >
-            Volcanoes
-          </button>
-        </p>
-      </div>
-    </footer>
+    <Footer />
 
     <!-- SVG Symbols -->
     <svg style="display: none">
