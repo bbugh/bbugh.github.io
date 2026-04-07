@@ -26,6 +26,6 @@ function typstResume() {
 export default defineConfig({
   outDir: "./_site",
   vite: { plugins: [tailwindcss()] },
-  site: 'https://brianbugh.me',
+  site: "https://brianbugh.me",
   integrations: [typstResume()],
 });
