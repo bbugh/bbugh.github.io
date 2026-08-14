@@ -7,11 +7,24 @@ const proficiencyColors = {
   Proficient: "bg-blue-100 text-blue-800",
   Familiar: "bg-gray-200 text-gray-800",
 };
+
+const proficiencyRank = { Master: 4, Expert: 3, Proficient: 2, Familiar: 1 };
+const recencyRank = (lastUsed: string) =>
+  lastUsed === "Current" ? 9999 : parseInt(lastUsed, 10);
+
+const sorted = technologies.map((section) => ({
+  ...section,
+  items: [...section.items].sort((a, b) => {
+    const pd = proficiencyRank[b.proficiency] - proficiencyRank[a.proficiency];
+    if (pd !== 0) return pd;
+    return recencyRank(b.lastUsed) - recencyRank(a.lastUsed);
+  }),
+}));
 ---
 
 <div>
   {
-    technologies.map((section) => (
+    sorted.map((section) => (
       <div>
         <h3 class="border-r border-l border-gray-300 bg-gray-200 p-3 font-serif text-lg font-semibold text-gray-700">
           {section.category}
