@@ -34,7 +34,7 @@
       },
       {
         "name": "React",
-        "experience": 2,
+        "experience": 3,
         "lastUsed": "Current",
         "proficiency": "Proficient"
       },
@@ -63,9 +63,15 @@
       },
       {
         "name": "Node.js",
-        "experience": 6,
+        "experience": 8,
         "lastUsed": "Current",
-        "proficiency": "Proficient"
+        "proficiency": "Expert"
+      },
+      {
+        "name": "GraphQL",
+        "experience": 4,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
       },
       {
         "name": "PHP",
@@ -134,7 +140,7 @@
       {
         "name": "Windows",
         "experience": 15,
-        "lastUsed": "Current",
+        "lastUsed": "2024",
         "proficiency": "Proficient"
       },
       {
@@ -146,6 +152,12 @@
       {
         "name": "Docker",
         "experience": 5,
+        "lastUsed": "Current",
+        "proficiency": "Expert"
+      },
+      {
+        "name": "Electron",
+        "experience": 3,
         "lastUsed": "Current",
         "proficiency": "Proficient"
       },
@@ -159,7 +171,7 @@
         "name": "AWS",
         "experience": 2,
         "lastUsed": "2024",
-        "proficiency": "Familiar"
+        "proficiency": "Proficient"
       }
     ]
   },
