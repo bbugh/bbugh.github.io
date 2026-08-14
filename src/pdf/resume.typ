@@ -63,10 +63,10 @@ Full-stack and systems engineer with 30 years of experience and 15 years of lead
 #section("Skills")
 
 #skill-row("Languages")[JavaScript #yrs[29], SQL #yrs[26], Bash #yrs[20], Ruby #yrs[15], TypeScript #yrs[9], C/C++ #yrs[8], PHP #yrs[5], Java #yrs[2], Python #yrs[1], Elixir #yrs[1], Rust #yrs[\<1]]
-#skill-row("Frontend")[HTML/CSS #yrs[30], Vue #yrs[8], Tailwind #yrs[5], React #yrs[2], Svelte #yrs[\<1]]
-#skill-row("Backend")[Ruby on Rails #yrs[15], Node.js #yrs[6], ASP.NET #yrs[2], Phoenix #yrs[1], Django #yrs[1]]
+#skill-row("Frontend")[HTML/CSS #yrs[30], Vue #yrs[8], Tailwind #yrs[5], React #yrs[3], Svelte #yrs[\<1]]
+#skill-row("Backend")[Ruby on Rails #yrs[15], Node.js #yrs[8], GraphQL #yrs[4], ASP.NET #yrs[2], Phoenix #yrs[1], Django #yrs[1]]
 #skill-row("Data")[SQL/Databases #yrs[26], BigQuery, Snowflake, ETL pipelines, data modeling]
-#skill-row("Infrastructure")[Git #yrs[15], Linux #yrs[8], Docker #yrs[5], GCP #yrs[4], AWS #yrs[2], CI/CD]
+#skill-row("Infrastructure")[Git #yrs[15], Linux #yrs[8], Docker #yrs[5], GCP #yrs[4], Electron #yrs[3], AWS #yrs[2], CI/CD]
 #skill-row("Design")[Photoshop #yrs[31], Figma #yrs[3], UX research, product design, design systems]
 #skill-row("Game Dev")[C/C++ engine architecture #yrs[8], Unity, performance optimization, memory management]
 
@@ -132,6 +132,30 @@ Full-stack and systems engineer with 30 years of experience and 15 years of lead
     #entry("Spec-Complete, Enhanced AS2 Interpreter in C++")[
       Wrote a complete, spec-compliant ActionScript 2 interpreter in C++ for a AAA game engine that had a strict no-third-party-libraries policy, enabling Flash as a UI design environment. Thread/process-safe async updates, fully automated test suite self-written in ActionScript, and an extensive component library that enabled rapid UI creation across titles.
     ]
+  ],
+)
+
+// === INDUSTRY EXPERIENCE ===
+#section("Industry Experience")
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 26pt,
+  [
+    - *Banking and financial services*: internal administration systems, security architecture
+    - *Tax and accounting services*: enterprise data architecture, ETL pipelines, technology strategy
+    - *E-commerce and marketplaces*: custom sales platform development, payment processing, theming & design systems
+    - *Gaming (AAA console)*: engine development, performance optimization, cross-platform shipping
+    - *Kiosks, IoT, and hardware-adjacent software*: custom OS builds, device management, audio systems
+    - *Education*: curriculum development, instruction, and mentorship across multiple programs
+  ],
+  [
+    - *Legal*: project management, engineering
+    - *Green and energy*: audit software, sustainability technology
+    - *Food service and hospitality*: GraphQL APIs, IoT printing systems, platform engineering, technical leadership
+    - *Manufacturing*: process documentation, designing and coding internal process tooling
+    - *Government*: data management, reporting, workflow automation
+    - *Travel*: customer service technical systems, sentiment analysis, reporting
   ],
 )
 
